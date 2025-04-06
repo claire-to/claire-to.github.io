@@ -1,0 +1,23 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Claire To"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - pubs.qmd
+
+format:
+  html:
+    theme:
+      - minty
+      # - brand
+      - custom.scss
+    css: styles.css
+    toc: true
+
+
+

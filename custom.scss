@@ -1,0 +1,56 @@
+/*-- scss:defaults --*/
+$primary: #a080e1 !default;
+$secondary: #e5ccf4 !default; 
+$font-family-sans-serif: 'Arial', sans-serif !default;  /* Custom sans-serif font */
+
+/*-- scss:rules --*/
+body {
+  background-color: #ffffff;     /* Very light pastel purple background */
+}
+
+/* Default link color */
+a {
+  color: #a080e1;               /* Soft purple */
+  text-decoration: none;
+  transition: color 0.3s ease;   /* Smooth transition on hover */
+}
+
+/* Hover effect for links */
+a:hover {
+  color: #6a4c9c;               /* Darker purple on hover */
+}
+
+/* Button and navbar button links */
+button, .btn {
+  background-color: #a080e1;     /* Soft purple background */
+  color: white; 
+  transition: background-color 0.3s ease;  /* Smooth transition on hover */
+}
+
+/* Hover effect for buttons */
+button:hover, .btn:hover {
+  background-color: #6a4c9c;     /* Darker purple on hover */
+}
+
+/* Navbar style */
+.navbar {
+  background-color: #a080e1;      /* Soft purple navbar */
+}
+
+.navbar a {
+  color: #422c6d;                 /* Dark purple text for navbar links */
+  transition: color 0.3s ease;    /* Smooth transition for hover effect */
+}
+
+/* Hover effect for navbar links */
+.navbar a:hover {
+  color: #6a4c9c;                 /* Darker purple on hover */
+}
+
+/* Footer styling */
+footer {
+  background-color: #a080e1;     /* Soft purple background */
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+}
