@@ -2,12 +2,12 @@
 title: "Publications"
 ---
 
-**[Investigating the Capabilities of Generative AI in Solving Data Structures, Algorithms, and Computability Problems](https://dl.acm.org/doi/10.1145/3641554.3701946)**  
-    *Nero Li, Shahar Broner, Yubin Kim, Katrina Mizuo, Elijah Sauder, Claire To, Albert Wang, Ofek Gila, and Michael Shindler*  
-   *[The Technical Symposium on Computer Science Education (SIGCSE TS) 2025](https://sigcse2025.sigcse.org)*  
-   Our study evaluates the ability of generative AI models to solve advanced problems in data structures, algorithms, and computability. By testing 165 free-response questions across 16 theoretical computer science topics, we analyze the strengths and limitations of these models, highlighting their potential for education and automated tutoring.
+#### [Investigating the Capabilities of Generative AI in Solving Data Structures, Algorithms, and Computability Problems](https://dl.acm.org/doi/10.1145/3641554.3701946)  
+*Nero Li, Shahar Broner, Yubin Kim, Katrina Mizuo, Elijah Sauder, Claire To, Albert Wang, Ofek Gila, and Michael Shindler*  
+*[The Technical Symposium on Computer Science Education (SIGCSE TS) 2025](https://sigcse2025.sigcse.org)*  
+Our study evaluates the ability of generative AI models to solve advanced problems in data structures, algorithms, and computability. By testing 165 free-response questions across 16 theoretical computer science topics, we analyze the strengths and limitations of these models, highlighting their potential for education and automated tutoring.
 
-**[Common Strategy Patterns of Persuasion in a Mission Critical and Time Sensitive Task](https://www.semdial.org/anthology/papers/Z/Z23/Z23-4019/)**  
-   *Claire To, Setareh Nasihati Gilani, David Traum*  
-   *[Proceedings of the 27th Workshop on the Semantics and Pragmatics of Dialogue](https://mezzanine.um.si/en/conference/semdial-2023-marilogue/)*  
-   Our research examines persuasion strategies in high-stakes, time-sensitive disaster relief interactions, analyzing how dialogue structure, speech acts, and urgency impact outcomes. By identifying patterns in communication, we explore how situational factors influence decision-making and persuasion effectiveness in crisis scenarios.
+#### [Common Strategy Patterns of Persuasion in a Mission Critical and Time Sensitive Task](https://www.semdial.org/anthology/papers/Z/Z23/Z23-4019/)
+*Claire To, Setareh Nasihati Gilani, David Traum*  
+*[Proceedings of the 27th Workshop on the Semantics and Pragmatics of Dialogue](https://mezzanine.um.si/en/conference/semdial-2023-marilogue/)*  
+Our research examines persuasion strategies in high-stakes, time-sensitive disaster relief interactions, analyzing how dialogue structure, speech acts, and urgency impact outcomes. By identifying patterns in communication, we explore how situational factors influence decision-making and persuasion effectiveness in crisis scenarios.
