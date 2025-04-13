@@ -1,0 +1,58 @@
+[
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nNature, Nurture, and the Space Between\n\n\n\n\n\n\nreflections\n\n\n\n\n\n\n\n\n\nJun 13, 2025\n\n\nClaire To\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/nature-nurture/index.html",
+    "href": "posts/nature-nurture/index.html",
+    "title": "Nature, Nurture, and the Space Between",
+    "section": "",
+    "text": "I had a discussion with my family about nature vs. nurture — a deeply personal debate that reflects how we perceive our potential and how much we’re willing to endure to reach it.\nMy family believes that there is a personal limit to everything, and that no amount of training or effort can push you beyond a level you don’t innately possess. I agree with them to an extent when it comes to physical traits. Some physical attributes are essential for professional athletes, and many can’t attain them no matter how much they train. Even then, I’ve heard many stories where people have defied what should’ve been possible for them. On the other hand, when it comes to mental abilities, the situation feels more nuanced.\nI believe in neuroplasticity — the ability of our brain to adapt and evolve. Skills such as public speaking, for example, seem to be one that can be learned and refined with enough training. I believe such skills don’t have a hard limit.\nMaybe it’s overly optimistic, but when it comes to abilities such as intelligence, I think there’s more to it. I know that not everyone can be an Einstein, but I do think that most people never come close to reaching their true potential. Too often, people assume their limits are far lower than they actually are, and give up far too early when things begin to feel difficult. But it’s during these moments of struggle that we experience the most growth and emerge stronger on the other side.\nFrom my experience in academia, it’s hard not to feel this way — especially when I’m surrounded by some of the most intelligent people. There are moments when I feel like I don’t belong, that I’m not cut out for this. As a result, I’ve nearly held myself back time and time again.\nI was trapped my own self-doubt. I couldn’t escape the perspective I had built around something I hadn’t yet experienced and knew so little about from the outside. I simply believed that only those born with a certain level of intelligence could accomplish it and that I was nowhere near qualified.\nIt wasn’t until I met someone at the right moment who unknowingly changed my life that made me see everything in a different light. They once told me:\n“I just wanted you to not worry too much about holding yourself back, because I don’t think you should be the one holding yourself back. Let the world do that. Let the world tell you you’re not good enough — and then ignore it.”\nThose words felt so empowering. It brought me a newfound feeling of hope and courage into my life. It made me realize how often I’d given up before the world ever had the chance to stop me.\nIn my moments of doubt, my parents were supportive of me stepping away. They didn’t see the value in pushing further when the challenges felt like too much of a struggle. They often praised how far I’d come, but at the same time, they would say they couldn’t have done it themselves.\nI don’t think that’s true.\nI never felt like I possessed innate talent in this field of study. Nothing has ever come easy to me; I had to work and struggle for every single piece of it. That’s exactly why I believe anyone can do it with enough stubbornness and perseverance.\nIn my times of uncertainty and doubt, it was those who had already been ahead of me and had gone through the same challenges that encouraged me to keep going. From community college to my bachelor’s degree and now pursuing a PhD, at each pivotal phase in my life, those who haven’t experienced the journey themselves feared it and questioned whether I could do it, while those who had walked the path believed it was possible.\nIf not for the people I met along the way, I may not be where I am today. Maybe I wouldn’t even believe in the possibility of reaching my limits.\nI think it’s a tragedy that so many people give up the moment things get tough, and never discover how far they can really go. Like standing at the bottom of a mountain — you don’t know if you’ll make it over, but if you do, you might discover something you never imagined on the other side, and everything in between.\nSo why not try? Try until you fail, and only then will you discover your true limit."
+  },
+  {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research",
+    "section": "",
+    "text": "Investigating the Capabilities of Generative AI in Solving Data Structures, Algorithms, and Computability Problems\nNero Li, Shahar Broner, Yubin Kim, Katrina Mizuo, Elijah Sauder, Claire To, Albert Wang, Ofek Gila, and Michael Shindler\nThe Technical Symposium on Computer Science Education (SIGCSE TS) 2025\nOur study evaluates the ability of generative AI models to solve advanced problems in data structures, algorithms, and computability. By testing 165 free-response questions across 16 theoretical computer science topics, we analyze the strengths and limitations of these models, highlighting their potential for education and automated tutoring.\n\n\nCommon Strategy Patterns of Persuasion in a Mission Critical and Time Sensitive Task\nClaire To, Setareh Nasihati Gilani, David Traum\nProceedings of the 27th Workshop on the Semantics and Pragmatics of Dialogue\nOur research examines persuasion strategies in high-stakes, time-sensitive disaster relief interactions, analyzing how dialogue structure, speech acts, and urgency impact outcomes. By identifying patterns in communication, we explore how situational factors influence decision-making and persuasion effectiveness in crisis scenarios."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Claire To",
+    "section": "",
+    "text": "Hello! I’m a PhD student in Computer Science at the University of California, Irvine in the Center for Algorithms and Theory of Computation. I’m honored to be advised by Dr. Michael Goodrich."
+  },
+  {
+    "objectID": "index.html#about",
+    "href": "index.html#about",
+    "title": "Claire To",
+    "section": "",
+    "text": "Hello! I’m a PhD student in Computer Science at the University of California, Irvine in the Center for Algorithms and Theory of Computation. I’m honored to be advised by Dr. Michael Goodrich."
+  },
+  {
+    "objectID": "index.html#research",
+    "href": "index.html#research",
+    "title": "Claire To",
+    "section": "Research",
+    "text": "Research\nMy current research area within algorithm theory is computational geometry, where I work on developing and analyzing geometric algorithms to produce theoretically elegant results. My interest in research grew from my involvement in computer science education, which sparked a deeper appreciation for learning and inspired me to pursue a PhD."
+  },
+  {
+    "objectID": "index.html#education",
+    "href": "index.html#education",
+    "title": "Claire To",
+    "section": "Education",
+    "text": "Education\nUniversity of California, Irvine | Ph.D in Computer Science | Sept 2025 - Present\nUniversity of California, Irvine | B.S in Computer Science | Sept 2023 - Jun 2025\nOrange Coast College | A.S in Computer Science, A.A in Liberal Arts | Aug 2020 - May 2023"
+  },
+  {
+    "objectID": "index.html#teaching",
+    "href": "index.html#teaching",
+    "title": "Claire To",
+    "section": "Teaching",
+    "text": "Teaching\nCS 161: Design and Analysis of Algorithms\nInstructor: Michael Shindler\nTerm: Fall 2025"
+  }
+]
