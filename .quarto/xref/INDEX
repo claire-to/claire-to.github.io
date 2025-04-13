@@ -13,5 +13,11 @@
   },
   "pubs.qmd": {
     "pubs.html": "d06adcd2"
+  },
+  "posts/nature-nurture/index.qmd": {
+    "index.html": "6476ff04"
+  },
+  "research.qmd": {
+    "research.html": "71761f0a"
   }
 }
