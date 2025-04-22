@@ -1,8 +1,9 @@
 [
   {
-    "listing": "/blog.html",
+    "listing": "/posts.html",
     "items": [
-      "/posts/nature-nurture/index.html"
+      "/posts/nature-nurture/index.html",
+      "/posts/graduate-essay/index.html"
     ]
   }
 ]
