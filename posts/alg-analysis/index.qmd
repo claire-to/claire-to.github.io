@@ -26,6 +26,8 @@ This is less useful in practice, since it’s too optimistic and best case scena
 
 The longest possible time an algorithm takes on any input.
 
+For example, the worst case in searching for a number in a list is when the number is found at the very last position checked or not found in the list at all. In insertion sort, the worst case occurs when the array is reverse-sorted.
+
 This is the most pessimistic, but also a reliable way to measure an algorithm’s performance because it guarantees that the algorithm will always run within a certain time.
 
 ### Average Case
