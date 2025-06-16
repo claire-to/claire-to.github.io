@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Claire To">
+<meta name="dcterms.date" content="2025-06-16">
 
-<title>index – Claire To</title>
+<title>Understanding Algorithm Analysis – Claire To</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -103,7 +105,7 @@ window.Quarto = {
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
@@ -133,7 +135,38 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Understanding Algorithm Analysis</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">algorithms</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Claire To </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">June 16, 2025</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
@@ -141,15 +174,13 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#understanding-algorithm-analysis" id="toc-understanding-algorithm-analysis" class="nav-link active" data-scroll-target="#understanding-algorithm-analysis">Understanding Algorithm Analysis</a>
-  <ul class="collapse">
-  <li><a href="#case-analysis" id="toc-case-analysis" class="nav-link" data-scroll-target="#case-analysis">Case Analysis</a>
+  <li><a href="#case-analysis" id="toc-case-analysis" class="nav-link active" data-scroll-target="#case-analysis">Case Analysis</a>
   <ul class="collapse">
   <li><a href="#best-case" id="toc-best-case" class="nav-link" data-scroll-target="#best-case">Best Case</a></li>
   <li><a href="#worst-case" id="toc-worst-case" class="nav-link" data-scroll-target="#worst-case">Worst Case</a></li>
   <li><a href="#average-case" id="toc-average-case" class="nav-link" data-scroll-target="#average-case">Average Case</a></li>
   </ul></li>
-  <li><a href="#bounds" id="toc-bounds" class="nav-link" data-scroll-target="#bounds">Bounds</a>
+  <li><a href="#asymptotic-bounds" id="toc-asymptotic-bounds" class="nav-link" data-scroll-target="#asymptotic-bounds">Asymptotic Bounds</a>
   <ul class="collapse">
   <li><a href="#lower-bound" id="toc-lower-bound" class="nav-link" data-scroll-target="#lower-bound">Lower Bound</a></li>
   <li><a href="#upper-bound" id="toc-upper-bound" class="nav-link" data-scroll-target="#upper-bound">Upper Bound</a></li>
@@ -162,19 +193,17 @@ window.Quarto = {
   <li><a href="#little-o-ofn" id="toc-little-o-ofn" class="nav-link" data-scroll-target="#little-o-ofn">Little o: <span class="math inline">\(o(f(n))\)</span></a></li>
   <li><a href="#little-omega-omegafn" id="toc-little-omega-omegafn" class="nav-link" data-scroll-target="#little-omega-omegafn">Little omega: <span class="math inline">\(\omega(f(n))\)</span></a></li>
   </ul></li>
-  </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
-<section id="understanding-algorithm-analysis" class="level1">
-<h1>Understanding Algorithm Analysis</h1>
-<p>I’ve noticed that a lot of students – whether they’re currently taking algorithms or have already completed the course – often confuse cases with bounds when discussing algorithm analysis. I know I had to wrestle with this concept myself for quite a while before things started to click.</p>
+
+<p>I’ve noticed that a lot of students – whether they’re currently taking algorithms or have already completed the course – often confuse cases with bounds when discussing algorithm analysis. I know I personally have had to wrestle with this concept myself for quite a while.</p>
 <p>My hope is that this helps clear up some of that confusion and provides an intuitive, tangible overview of these concepts. It’s not meant to be a comprehensive or formal discussion, as there are already countless resources online, but rather a more approachable supplement for those who already have some background.</p>
 <section id="case-analysis" class="level2">
 <h2 class="anchored" data-anchor-id="case-analysis">Case Analysis</h2>
@@ -188,7 +217,7 @@ window.Quarto = {
 <section id="worst-case" class="level3">
 <h3 class="anchored" data-anchor-id="worst-case">Worst Case</h3>
 <p>The longest possible time an algorithm takes on any input.</p>
-<p>This is the most pessimistic, but also a reliable way to measure an algorithm’s performance because it guarantees that the algorithm will always run within a certain time, regardless of the input.</p>
+<p>This is the most pessimistic, but also a reliable way to measure an algorithm’s performance because it guarantees that the algorithm will always run within a certain time.</p>
 </section>
 <section id="average-case" class="level3">
 <h3 class="anchored" data-anchor-id="average-case">Average Case</h3>
@@ -204,14 +233,14 @@ window.Quarto = {
 </section>
 </section>
 </section>
-<section id="bounds" class="level2">
-<h2 class="anchored" data-anchor-id="bounds">Bounds</h2>
-<p>In algorithm analysis, we often use bounds to describe how an algorithm’s running time grows as the input gets larger.</p>
+<section id="asymptotic-bounds" class="level2">
+<h2 class="anchored" data-anchor-id="asymptotic-bounds">Asymptotic Bounds</h2>
+<p>In algorithm analysis, we often use asymptotic bounds to describe how an algorithm’s running time grows as the input grows larger.</p>
 <p>You can visualize this by plotting the runtime for increasing input sizes and comparing it to well-known functions like <span class="math inline">\(n\)</span>, <span class="math inline">\(n \log n\)</span>, or <span class="math inline">\(n^2\)</span>. This is the core idea behind asymptotic comparison of growth rates.</p>
 <section id="lower-bound" class="level3">
 <h3 class="anchored" data-anchor-id="lower-bound">Lower Bound</h3>
 <p>A lower bound proves that any correct algorithm must do at least a certain amount of work for a problem.</p>
-<p>For example, searching for an element in an unsorted list requires <span class="math inline">\(n\)</span> comparisions, because we must check every element to be sure it’s not there. Otherwise, we might miss the one we didn’t check, and that could’ve been the correct one.</p>
+<p>For example, searching for an element in an unsorted list requires <span class="math inline">\(n\)</span> comparisions because we must check every element. Otherwise, we might miss the one we didn’t check, and that could’ve been the correct one.</p>
 <p>Lower bounds are often proven using:</p>
 <ul>
 <li>Counting arguments<br>
@@ -239,30 +268,34 @@ window.Quarto = {
 <p>In theoretical CS, unless specified otherwise, asymptotic notation usually refers to the <strong>worst-case</strong>. In practice, especially with randomized algorithms or heuristics, <strong>expected or average-case</strong> complexity may be more relevant.</p>
 <section id="big-o-ofn" class="level3">
 <h3 class="anchored" data-anchor-id="big-o-ofn">Big O: <span class="math inline">\(O(f(n))\)</span></h3>
-<p>An upper bound that shows the algorithm A’s running time grows <strong>no faster</strong> than some function <span class="math inline">\(f(n)\)</span> as the input size grows. The function <span class="math inline">\(f(n)\)</span> graphed is <em>above or equal</em> to algorithm A’s graph.</p>
+<p>An upper bound that shows the algorithm A’s running time grows <strong>no faster</strong> than some function <span class="math inline">\(f(n)\)</span> as the input size grows.</p>
+<p>The function <span class="math inline">\(f(n)\)</span> graphed is <em>above or equal</em> to algorithm A’s graph.</p>
 </section>
 <section id="big-omega-omegafn" class="level3">
 <h3 class="anchored" data-anchor-id="big-omega-omegafn">Big Omega: <span class="math inline">\(\Omega(f(n))\)</span></h3>
-<p>A lower bound that shows the algorithm A’s running time grows <strong>no slower</strong> than some function <span class="math inline">\(f(n)\)</span>, as the input size grows. The function <span class="math inline">\(f(n)\)</span> graphed is <em>below or equal</em> to algorithm A’s graph.</p>
+<p>A lower bound that shows the algorithm A’s running time grows <strong>no slower</strong> than some function <span class="math inline">\(f(n)\)</span>, as the input size grows.</p>
+<p>The function <span class="math inline">\(f(n)\)</span> graphed is <em>below or equal</em> to algorithm A’s graph.</p>
 </section>
 <section id="theta-thetafn" class="level3">
 <h3 class="anchored" data-anchor-id="theta-thetafn">Theta: <span class="math inline">\(\Theta(f(n))\)</span></h3>
-<p>This is a tight bound. In other words, the upper and lower bounds are equivalent up to constant factors. Thus, the algorithm is <strong>asymptotically optimal</strong>.</p>
+<p>This is a tight bound. In other words, the upper and lower bounds are equivalent up to constant factors.</p>
+<p>Thus, the algorithm is <strong>asymptotically optimal</strong>.</p>
 </section>
 <section id="little-o-ofn" class="level3">
 <h3 class="anchored" data-anchor-id="little-o-ofn">Little o: <span class="math inline">\(o(f(n))\)</span></h3>
-<p>Similar to Big O, but shows the algorithm A’s running time is <strong>strictly slower than</strong> <span class="math inline">\(f(n)\)</span>. The function <span class="math inline">\(f(n)\)</span> graphed is <em>strictly above</em> to algorithm A’s graph.</p>
+<p>Similar to Big O, but shows the algorithm A’s running time is <strong>strictly slower than</strong> <span class="math inline">\(f(n)\)</span>.</p>
+<p>The function <span class="math inline">\(f(n)\)</span> graphed is <em>strictly above</em> to algorithm A’s graph.</p>
 <p>For example, <span class="math inline">\(n\)</span> grows strictly slower than <span class="math inline">\(n \log n\)</span>.</p>
 </section>
 <section id="little-omega-omegafn" class="level3">
 <h3 class="anchored" data-anchor-id="little-omega-omegafn">Little omega: <span class="math inline">\(\omega(f(n))\)</span></h3>
-<p>Similar to Big Omega, but shows the algorithm A’s running time is <strong>strictly faster than</strong> <span class="math inline">\(f(n)\)</span>. The function <span class="math inline">\(f(n)\)</span> graphed is <em>strictly below</em> to algorithm A’s graph.</p>
+<p>Similar to Big Omega, but shows the algorithm A’s running time is <strong>strictly faster than</strong> <span class="math inline">\(f(n)\)</span>.</p>
+<p>The function <span class="math inline">\(f(n)\)</span> graphed is <em>strictly below</em> to algorithm A’s graph.</p>
 <p>For example, <span class="math inline">\(n \log n\)</span> grows strictly faster than <span class="math inline">\(n\)</span>.</p>
 <hr>
 <p>In algorithm analysis, we aim to measure performance across different input scenarios using asymptotic notations. Worst-case is most common in theory, but average and expected case are more often used in practice. I hope this clears up some common misconceptions!</p>
 
 
-</section>
 </section>
 </section>
 

@@ -1,6 +1,12 @@
-# Understanding Algorithm Analysis
+---
+title: "Understanding Algorithm Analysis"
+author: "Claire To"
+date: "2025-06-16"
+categories: [algorithms]
+title-block-banner: true
+---
 
-I’ve noticed that a lot of students -- whether they're currently taking algorithms or have already completed the course -- often confuse cases with bounds when discussing algorithm analysis. I know I had to wrestle with this concept myself for quite a while before things started to click. 
+I’ve noticed that a lot of students -- whether they're currently taking algorithms or have already completed the course -- often confuse cases with bounds when discussing algorithm analysis. I know I personally have had to wrestle with this concept myself for quite a while. 
 
 My hope is that this helps clear up some of that confusion and provides an intuitive, tangible overview of these concepts. It’s not meant to be a comprehensive or formal discussion, as there are already countless resources online, but rather a more approachable supplement for those who already have some background.
 
@@ -20,7 +26,7 @@ This is less useful in practice, since it’s too optimistic and best case scena
 
 The longest possible time an algorithm takes on any input.
 
-This is the most pessimistic, but also a reliable way to measure an algorithm’s performance because it guarantees that the algorithm will always run within a certain time, regardless of the input.
+This is the most pessimistic, but also a reliable way to measure an algorithm’s performance because it guarantees that the algorithm will always run within a certain time.
 
 ### Average Case
 
@@ -36,9 +42,9 @@ That means we average the running times of the algorithm over all possible input
 
 - **Geometric distribution:** Models the number of trials until the first success. Most common in probabilistic or randomized algorithms.
 
-## Bounds
+## Asymptotic Bounds
 
-In algorithm analysis, we often use bounds to describe how an algorithm's running time grows as the input gets larger.
+In algorithm analysis, we often use asymptotic bounds to describe how an algorithm's running time grows as the input grows larger.
 
 You can visualize this by plotting the runtime for increasing input sizes and comparing it to well-known functions like $n$, $n \log n$, or $n^2$. This is the core idea behind asymptotic comparison of growth rates.
 
@@ -85,20 +91,26 @@ The function $f(n)$ graphed is *below or equal* to algorithm A's graph.
 
 ### Theta: $\Theta(f(n))$
 
-This is a tight bound. In other words, the upper and lower bounds are equivalent up to constant factors. Thus, the algorithm is **asymptotically optimal**.
+This is a tight bound. In other words, the upper and lower bounds are equivalent up to constant factors. 
+
+Thus, the algorithm is **asymptotically optimal**.
 
 ### Little o: $o(f(n))$
 
-Similar to Big O, but shows the algorithm A’s running time is **strictly slower than** $f(n)$. The function $f(n)$ graphed is *strictly above* to algorithm A's graph.
+Similar to Big O, but shows the algorithm A’s running time is **strictly slower than** $f(n)$. 
+
+The function $f(n)$ graphed is *strictly above* to algorithm A's graph.
 
 For example, $n$ grows strictly slower than $n \log n$.
 
 ### Little omega: $\omega(f(n))$
 
-Similar to Big Omega, but shows the algorithm A’s running time is **strictly faster than** $f(n)$. The function $f(n)$ graphed is *strictly below* to algorithm A's graph.
+Similar to Big Omega, but shows the algorithm A’s running time is **strictly faster than** $f(n)$. 
+
+The function $f(n)$ graphed is *strictly below* to algorithm A's graph.
 
 For example, $n \log n$ grows strictly faster than $n$.
 
 ---
 
-In algorithm analysis, we aim to measure performance across different input scenarios using asymptotic notations. Worst-case is most common in theory, but average and expected case are more often used in practice. I hope this clears up some common misconceptions!
+In algorithm analysis, we use asymptotic notation to express bounds on runtime as a way to measure performance across different input scenarios. Worst-case analysis is most common in theory, while average-case and expected-case analyses are more often used in practice. I hope this helps clear up some common misconceptions!
