@@ -19,5 +19,17 @@
   },
   "research.qmd": {
     "research.html": "71761f0a"
+  },
+  "posts/graduate-essay/index.qmd": {
+    "index.html": "5f28dd8f"
+  },
+  "posts.qmd": {
+    "posts.html": "5704e1de"
+  },
+  "posts/staying/staying.qmd": {
+    "staying.html": "66f2bee2"
+  },
+  "posts/alg-analysis/index.qmd": {
+    "index.html": "8f6f799d"
   }
 }

@@ -2,6 +2,7 @@
   {
     "listing": "/posts.html",
     "items": [
+      "/posts/alg-analysis/index.html",
       "/posts/staying/staying.html",
       "/posts/nature-nurture/index.html",
       "/posts/graduate-essay/index.html"

@@ -1,5 +1,5 @@
 ---
-title: "Claire To"
+title: "Claire A. To"
 image: img.jpg
 about:
   template: trestles
@@ -8,7 +8,7 @@ about:
   links:
     - icon: envelope
       text: Email
-      href: mailto:c.to@uci.edu
+      href: mailto:claire.to@uci.edu
     - icon: linkedin
       text: LinkedIn
       href: https://linkedin.com/in/claireto    
@@ -24,9 +24,17 @@ about:
 
 Hello! I’m a PhD student in Computer Science at the University of California, Irvine in the [Center for Algorithms and Theory of Computation](https://ics.uci.edu/~theory/). I'm honored to be advised by [Dr. Michael Goodrich](https://ics.uci.edu/~goodrich/).
 
+
 ## Research
 
 My current research area within algorithm theory is computational geometry, where I work on developing and analyzing geometric algorithms to produce theoretically elegant results. My interest in research grew from my involvement in computer science education, which sparked a deeper appreciation for learning and inspired me to pursue a PhD.
+
+
+## Teaching
+
+**CS 161**: Design and Analysis of Algorithms  
+Instructor: [Michael Shindler](https://ics.uci.edu/~mikes/)
+
 
 ## Education
 
@@ -35,9 +43,3 @@ University of California, Irvine | Ph.D in Computer Science | Sept 2025 - Presen
 University of California, Irvine | B.S in Computer Science | Sept 2023 - Jun 2025  
 
 Orange Coast College | A.S in Computer Science, A.A in Liberal Arts | Aug 2020 - May 2023
-
-## Teaching
-
-**CS 161**: Design and Analysis of Algorithms  
-Instructor: [Michael Shindler](https://ics.uci.edu/~mikes/)  
-Term: Fall 2025  
