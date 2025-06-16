@@ -50,6 +50,17 @@ In algorithm analysis, we often use asymptotic bounds to describe how an algorit
 
 You can visualize this by plotting the runtime for increasing input sizes and comparing it to well-known functions like $n$, $n \log n$, or $n^2$. This is the core idea behind asymptotic comparison of growth rates.
 
+### Upper Bound
+
+An upper bound means we’ve found some algorithm that solves the problem within a certain time. An upper bound for a problem is established by providing an algorithm that achieves that bound.
+
+Upper bounds are often proven using:
+
+- Explicit algorithm analysis  
+- Reductions from known problems
+
+When we discuss upper bounds, we’re referring to the **maximum** amount of work **a specific algorithm** requires to solve a problem.
+
 ### Lower Bound
 
 A lower bound proves that any correct algorithm must do at least a certain amount of work for a problem. It shows the fundamental difficulty of the problem itself, not just the best possible performance of a particular algorithm.
@@ -63,17 +74,6 @@ Lower bounds are often proven using:
 - Adversary arguments  
 
 When we discuss lower bounds, we’re referring to the **minimum** amount of work that **any correct algorithm** must perform to solve the problem.
-
-### Upper Bound
-
-An upper bound means we’ve found some algorithm that solves the problem within a certain time. An upper bound for a problem is established by providing an algorithm that achieves that bound.
-
-Upper bounds are often proven using:
-
-- Explicit algorithm analysis  
-- Reductions from known problems
-
-When we discuss upper bounds, we’re referring to the **maximum** amount of work **a specific algorithm** requires to solve a problem.
 
 ## Asymptotic Notation
 

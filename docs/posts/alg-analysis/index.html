@@ -182,8 +182,8 @@ window.Quarto = {
   </ul></li>
   <li><a href="#asymptotic-bounds" id="toc-asymptotic-bounds" class="nav-link" data-scroll-target="#asymptotic-bounds">Asymptotic Bounds</a>
   <ul class="collapse">
-  <li><a href="#lower-bound" id="toc-lower-bound" class="nav-link" data-scroll-target="#lower-bound">Lower Bound</a></li>
   <li><a href="#upper-bound" id="toc-upper-bound" class="nav-link" data-scroll-target="#upper-bound">Upper Bound</a></li>
+  <li><a href="#lower-bound" id="toc-lower-bound" class="nav-link" data-scroll-target="#lower-bound">Lower Bound</a></li>
   </ul></li>
   <li><a href="#asymptotic-notation" id="toc-asymptotic-notation" class="nav-link" data-scroll-target="#asymptotic-notation">Asymptotic Notation</a>
   <ul class="collapse">
@@ -238,9 +238,20 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="asymptotic-bounds">Asymptotic Bounds</h2>
 <p>In algorithm analysis, we often use asymptotic bounds to describe how an algorithm’s running time grows as the input grows larger.</p>
 <p>You can visualize this by plotting the runtime for increasing input sizes and comparing it to well-known functions like <span class="math inline">\(n\)</span>, <span class="math inline">\(n \log n\)</span>, or <span class="math inline">\(n^2\)</span>. This is the core idea behind asymptotic comparison of growth rates.</p>
+<section id="upper-bound" class="level3">
+<h3 class="anchored" data-anchor-id="upper-bound">Upper Bound</h3>
+<p>An upper bound means we’ve found some algorithm that solves the problem within a certain time. An upper bound for a problem is established by providing an algorithm that achieves that bound.</p>
+<p>Upper bounds are often proven using:</p>
+<ul>
+<li>Explicit algorithm analysis<br>
+</li>
+<li>Reductions from known problems</li>
+</ul>
+<p>When we discuss upper bounds, we’re referring to the <strong>maximum</strong> amount of work <strong>a specific algorithm</strong> requires to solve a problem.</p>
+</section>
 <section id="lower-bound" class="level3">
 <h3 class="anchored" data-anchor-id="lower-bound">Lower Bound</h3>
-<p>A lower bound proves that any correct algorithm must do at least a certain amount of work for a problem.</p>
+<p>A lower bound proves that any correct algorithm must do at least a certain amount of work for a problem. It shows the fundamental difficulty of the problem itself, not just the best possible performance of a particular algorithm.</p>
 <p>For example, searching for an element in an unsorted list requires <span class="math inline">\(n\)</span> comparisions because we must check every element. Otherwise, we might miss the one we didn’t check, and that could’ve been the correct one.</p>
 <p>Lower bounds are often proven using:</p>
 <ul>
@@ -251,17 +262,6 @@ window.Quarto = {
 <li>Adversary arguments</li>
 </ul>
 <p>When we discuss lower bounds, we’re referring to the <strong>minimum</strong> amount of work that <strong>any correct algorithm</strong> must perform to solve the problem.</p>
-</section>
-<section id="upper-bound" class="level3">
-<h3 class="anchored" data-anchor-id="upper-bound">Upper Bound</h3>
-<p>An upper bound means we’ve found some algorithm that solves the problem within a certain time.</p>
-<p>Upper bounds are usually proven through:</p>
-<ul>
-<li>Explicit algorithm analysis<br>
-</li>
-<li>Reductions from known problems</li>
-</ul>
-<p>When we discuss upper bounds, we’re referring to the <strong>maximum</strong> amount of work <strong>a specific algorithm</strong> requires to solve a problem.</p>
 </section>
 </section>
 <section id="asymptotic-notation" class="level2">
@@ -280,7 +280,7 @@ window.Quarto = {
 <section id="theta-thetafn" class="level3">
 <h3 class="anchored" data-anchor-id="theta-thetafn">Theta: <span class="math inline">\(\Theta(f(n))\)</span></h3>
 <p>This indicates a <strong>tight bound</strong>. In other words, the upper and lower bounds are equivalent up to constant factors.</p>
-<p>Thus, the algorithm is <strong>asymptotically optimal</strong>.</p>
+<p>Thus, the algorithm is <strong>asymptotically optimal</strong> because its growth rate matches the inherent difficulty of the problem, meaning we have proven that the problem cannot be solved any faster than what the algorithm achieves.</p>
 </section>
 <section id="little-o-ofn" class="level3">
 <h3 class="anchored" data-anchor-id="little-o-ofn">Little o: <span class="math inline">\(o(f(n))\)</span></h3>
