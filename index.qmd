@@ -27,7 +27,7 @@ Hello! I’m a PhD student in Computer Science at the University of California, 
 
 ## Research
 
-My research sits within theoretical computer science. I’ve naturally gravitated toward algorithms and data structures, particularly when they intersect with computational geometry. My interest in research grew out of my experiences in computer science education, which reshaped how I thought about learning and inspired me to pursue a PhD.
+My research lies within theoretical computer science. I’ve naturally gravitated toward algorithms and data structures, particularly when they intersect with computational geometry. My interest in research grew out of my experiences in computer science education, which reshaped how I thought about learning and inspired me to pursue a PhD.
 
 ## Teaching
 
