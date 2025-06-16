@@ -27,7 +27,7 @@ Hello! I’m a PhD student in Computer Science at the University of California, 
 
 ## Research
 
-My research lies within theoretical computer science. I’ve naturally gravitated toward algorithms and data structures, particularly when they intersect with computational geometry. My interest in research grew out of my experiences in computer science education, which reshaped how I thought about learning and inspired me to pursue a PhD.
+My research lies within the field of Theoretical Computer Science. I naturally gravitate toward algorithms and data structures, particularly when applied to problems in computational geometry. My interest in research grew from my experiences in computer science education, which reshaped how I think about learning and inspired me to pursue a PhD.
 
 ## Teaching
 
@@ -39,6 +39,12 @@ Instructor: [Michael Shindler](https://ics.uci.edu/~mikes/)
 
 University of California, Irvine | Ph.D in Computer Science | Sept 2025 - Present
 
-University of California, Irvine | B.S in Computer Science | Sept 2023 - Jun 2025  
+Orange Coast College | A.A in Dance | Aug 2024 - Present
 
-Orange Coast College | A.S in Computer Science, A.A in Liberal Arts | Aug 2020 - May 2023
+University of California, Irvine | B.S in Computer Science | Sept 2023 - Jun 2025
+
+Orange Coast College | A.A in Liberal Arts | Aug 2021 - May 2023
+
+Orange Coast College | A.S in Computer Science | Aug 2020 - May 2023
+
+Huntington Beach High School | High School Diploma | Aug 2017 - May 2021
