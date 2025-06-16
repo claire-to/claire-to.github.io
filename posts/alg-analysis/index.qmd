@@ -77,23 +77,23 @@ When we discuss upper bounds, we’re referring to the **maximum** amount of wor
 
 ## Asymptotic Notation
 
-In theoretical CS, unless specified otherwise, asymptotic notation usually refers to the **worst-case**. In practice, especially with randomized algorithms or heuristics, **expected or average-case** complexity may be more relevant.
+In theoretical computer science, unless specified otherwise, asymptotic notation usually refers to the **worst-case**. In practice, especially with randomized algorithms or heuristics, **expected or average-case** complexity may be more relevant.
 
 ### Big O: $O(f(n))$
 
-An upper bound that shows the algorithm A’s running time grows **no faster** than some function $f(n)$ as the input size grows. 
+An **upper bound** that shows the algorithm A’s running time grows **no faster** than some function $f(n)$ as the input size grows. 
 
 The function $f(n)$ graphed is *above or equal* to algorithm A's graph.
 
 ### Big Omega: $\Omega(f(n))$
 
-A lower bound that shows the algorithm A’s running time grows **no slower** than some function $f(n)$, as the input size grows. 
+A **lower bound** that shows the algorithm A’s running time grows **no slower** than some function $f(n)$, as the input size grows. 
 
 The function $f(n)$ graphed is *below or equal* to algorithm A's graph.
 
 ### Theta: $\Theta(f(n))$
 
-This is a tight bound. In other words, the upper and lower bounds are equivalent up to constant factors. 
+This indicates a **tight bound**. In other words, the upper and lower bounds are equivalent up to constant factors. 
 
 Thus, the algorithm is **asymptotically optimal**.
 
@@ -101,7 +101,7 @@ Thus, the algorithm is **asymptotically optimal**.
 
 Similar to Big O, but shows the algorithm A’s running time is **strictly slower than** $f(n)$. 
 
-The function $f(n)$ graphed is *strictly above* to algorithm A's graph.
+The function $f(n)$ graphed is *strictly above* algorithm A's graph.
 
 For example, $n$ grows strictly slower than $n \log n$.
 
@@ -109,7 +109,7 @@ For example, $n$ grows strictly slower than $n \log n$.
 
 Similar to Big Omega, but shows the algorithm A’s running time is **strictly faster than** $f(n)$. 
 
-The function $f(n)$ graphed is *strictly below* to algorithm A's graph.
+The function $f(n)$ graphed is *strictly below* algorithm A's graph.
 
 For example, $n \log n$ grows strictly faster than $n$.
 
