@@ -52,7 +52,7 @@ You can visualize this by plotting the runtime for increasing input sizes and co
 
 ### Lower Bound
 
-A lower bound proves that any correct algorithm must do at least a certain amount of work for a problem.
+A lower bound proves that any correct algorithm must do at least a certain amount of work for a problem. It shows the fundamental difficulty of the problem itself, not just the best possible performance of a particular algorithm.
 
 For example, searching for an element in an unsorted list requires $n$ comparisions because we must check every element. Otherwise, we might miss the one we didn’t check, and that could’ve been the correct one.
 
@@ -66,9 +66,9 @@ When we discuss lower bounds, we’re referring to the **minimum** amount of wor
 
 ### Upper Bound
 
-An upper bound means we’ve found some algorithm that solves the problem within a certain time.
+An upper bound means we’ve found some algorithm that solves the problem within a certain time. An upper bound for a problem is established by providing an algorithm that achieves that bound.
 
-Upper bounds are usually proven through:
+Upper bounds are often proven using:
 
 - Explicit algorithm analysis  
 - Reductions from known problems
@@ -95,7 +95,7 @@ The function $f(n)$ graphed is *below or equal* to algorithm A's graph.
 
 This indicates a **tight bound**. In other words, the upper and lower bounds are equivalent up to constant factors. 
 
-Thus, the algorithm is **asymptotically optimal**.
+Thus, the algorithm is **asymptotically optimal** because its growth rate matches the inherent difficulty of the problem, meaning we have proven that the problem cannot be solved any faster than what the algorithm achieves.
 
 ### Little o: $o(f(n))$
 
