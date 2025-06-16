@@ -217,6 +217,7 @@ window.Quarto = {
 <section id="worst-case" class="level3">
 <h3 class="anchored" data-anchor-id="worst-case">Worst Case</h3>
 <p>The longest possible time an algorithm takes on any input.</p>
+<p>For example, the worst case in searching for a number in a list is when the number is found at the very last position checked or not found in the list at all. In insertion sort, the worst case occurs when the array is reverse-sorted.</p>
 <p>This is the most pessimistic, but also a reliable way to measure an algorithm’s performance because it guarantees that the algorithm will always run within a certain time.</p>
 </section>
 <section id="average-case" class="level3">
@@ -265,32 +266,32 @@ window.Quarto = {
 </section>
 <section id="asymptotic-notation" class="level2">
 <h2 class="anchored" data-anchor-id="asymptotic-notation">Asymptotic Notation</h2>
-<p>In theoretical CS, unless specified otherwise, asymptotic notation usually refers to the <strong>worst-case</strong>. In practice, especially with randomized algorithms or heuristics, <strong>expected or average-case</strong> complexity may be more relevant.</p>
+<p>In theoretical computer science, unless specified otherwise, asymptotic notation usually refers to the <strong>worst-case</strong>. In practice, especially with randomized algorithms or heuristics, <strong>expected or average-case</strong> complexity may be more relevant.</p>
 <section id="big-o-ofn" class="level3">
 <h3 class="anchored" data-anchor-id="big-o-ofn">Big O: <span class="math inline">\(O(f(n))\)</span></h3>
-<p>An upper bound that shows the algorithm A’s running time grows <strong>no faster</strong> than some function <span class="math inline">\(f(n)\)</span> as the input size grows.</p>
+<p>An <strong>upper bound</strong> that shows the algorithm A’s running time grows <strong>no faster</strong> than some function <span class="math inline">\(f(n)\)</span> as the input size grows.</p>
 <p>The function <span class="math inline">\(f(n)\)</span> graphed is <em>above or equal</em> to algorithm A’s graph.</p>
 </section>
 <section id="big-omega-omegafn" class="level3">
 <h3 class="anchored" data-anchor-id="big-omega-omegafn">Big Omega: <span class="math inline">\(\Omega(f(n))\)</span></h3>
-<p>A lower bound that shows the algorithm A’s running time grows <strong>no slower</strong> than some function <span class="math inline">\(f(n)\)</span>, as the input size grows.</p>
+<p>A <strong>lower bound</strong> that shows the algorithm A’s running time grows <strong>no slower</strong> than some function <span class="math inline">\(f(n)\)</span>, as the input size grows.</p>
 <p>The function <span class="math inline">\(f(n)\)</span> graphed is <em>below or equal</em> to algorithm A’s graph.</p>
 </section>
 <section id="theta-thetafn" class="level3">
 <h3 class="anchored" data-anchor-id="theta-thetafn">Theta: <span class="math inline">\(\Theta(f(n))\)</span></h3>
-<p>This is a tight bound. In other words, the upper and lower bounds are equivalent up to constant factors.</p>
+<p>This indicates a <strong>tight bound</strong>. In other words, the upper and lower bounds are equivalent up to constant factors.</p>
 <p>Thus, the algorithm is <strong>asymptotically optimal</strong>.</p>
 </section>
 <section id="little-o-ofn" class="level3">
 <h3 class="anchored" data-anchor-id="little-o-ofn">Little o: <span class="math inline">\(o(f(n))\)</span></h3>
 <p>Similar to Big O, but shows the algorithm A’s running time is <strong>strictly slower than</strong> <span class="math inline">\(f(n)\)</span>.</p>
-<p>The function <span class="math inline">\(f(n)\)</span> graphed is <em>strictly above</em> to algorithm A’s graph.</p>
+<p>The function <span class="math inline">\(f(n)\)</span> graphed is <em>strictly above</em> algorithm A’s graph.</p>
 <p>For example, <span class="math inline">\(n\)</span> grows strictly slower than <span class="math inline">\(n \log n\)</span>.</p>
 </section>
 <section id="little-omega-omegafn" class="level3">
 <h3 class="anchored" data-anchor-id="little-omega-omegafn">Little omega: <span class="math inline">\(\omega(f(n))\)</span></h3>
 <p>Similar to Big Omega, but shows the algorithm A’s running time is <strong>strictly faster than</strong> <span class="math inline">\(f(n)\)</span>.</p>
-<p>The function <span class="math inline">\(f(n)\)</span> graphed is <em>strictly below</em> to algorithm A’s graph.</p>
+<p>The function <span class="math inline">\(f(n)\)</span> graphed is <em>strictly below</em> algorithm A’s graph.</p>
 <p>For example, <span class="math inline">\(n \log n\)</span> grows strictly faster than <span class="math inline">\(n\)</span>.</p>
 <hr>
 <p>In algorithm analysis, we use asymptotic notation to express bounds on runtime as a way to measure performance across different input scenarios. Worst-case analysis is most common in theory, while average-case and expected-case analyses are more often used in practice. I hope this helps clear up some common misconceptions!</p>
