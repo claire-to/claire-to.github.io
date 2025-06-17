@@ -81,15 +81,15 @@ In theoretical computer science, unless specified otherwise, asymptotic notation
 
 ### Big O: $O(f(n))$
 
-An **upper bound** that shows the algorithm A’s running time grows **no faster** than some function $f(n)$ as the input size grows. 
+An **upper bound** that shows the algorithm $A$'s running time grows **no faster** than some function $f(n)$ as the input size grows. 
 
-The function $f(n)$ graphed is *above or equal* to algorithm A's graph.
+The function $f(n)$ graphed is *above or equal* to algorithm $A$'s graph.
 
 ### Big Omega: $\Omega(f(n))$
 
-A **lower bound** that shows the algorithm A’s running time grows **no slower** than some function $f(n)$ as the input size grows. 
+A **lower bound** that shows the algorithm $A$'s running time grows **no slower** than some function $f(n)$ as the input size grows. 
 
-The function $f(n)$ graphed is *below or equal* to algorithm A's graph.
+The function $f(n)$ graphed is *below or equal* to algorithm $A$'s graph.
 
 ### Theta: $\Theta(f(n))$
 
@@ -99,20 +99,20 @@ Thus, the algorithm is **asymptotically optimal** because its growth rate matche
 
 ### Little o: $o(f(n))$
 
-Similar to Big O, but shows the algorithm A’s running time is **strictly slower than** $f(n)$. 
+Similar to Big O, but shows the algorithm $A$'s running time is **strictly slower than** $f(n)$. 
 
-The function $f(n)$ graphed is *strictly above* algorithm A's graph.
+The function $f(n)$ graphed is *strictly above* algorithm $A$'s graph.
 
 For example, $n$ grows strictly slower than $n \log n$.
 
 ### Little omega: $\omega(f(n))$
 
-Similar to Big Omega, but shows the algorithm A’s running time is **strictly faster than** $f(n)$. 
+Similar to Big Omega, but shows the algorithm $A$'s running time is **strictly faster than** $f(n)$. 
 
-The function $f(n)$ graphed is *strictly below* algorithm A's graph.
+The function $f(n)$ graphed is *strictly below* algorithm $A$'s graph.
 
 For example, $n \log n$ grows strictly faster than $n$.
 
 ---
 
-In algorithm analysis, we use asymptotic notation to express bounds on runtime as a way to measure performance across different input scenarios. Worst-case analysis is most common in theory, while average-case and expected-case analyses are more often used in practice. I hope this helps clear up some common misconceptions!
+In algorithm analysis, we use asymptotic notation to express bounds on runtime as a way to measure performance across different input scenarios. When describing bounds, worst-case analysis is most common in theory, while average-case and expected-case analyses are more often used in practice. I hope this helps clear up some common misconceptions!
