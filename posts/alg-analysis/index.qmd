@@ -87,7 +87,7 @@ The function $f(n)$ graphed is *above or equal* to algorithm A's graph.
 
 ### Big Omega: $\Omega(f(n))$
 
-A **lower bound** that shows the algorithm A’s running time grows **no slower** than some function $f(n)$, as the input size grows. 
+A **lower bound** that shows the algorithm A’s running time grows **no slower** than some function $f(n)$ as the input size grows. 
 
 The function $f(n)$ graphed is *below or equal* to algorithm A's graph.
 
