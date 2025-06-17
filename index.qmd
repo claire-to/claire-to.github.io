@@ -6,9 +6,6 @@ about:
   image-width: 10em
   image-shape: round
   links:
-    - icon: envelope
-      text: Email
-      href: mailto:claire.to@uci.edu
     - icon: linkedin
       text: LinkedIn
       href: https://linkedin.com/in/claireto    
@@ -24,6 +21,7 @@ about:
 
 Hello! I’m a PhD student in Computer Science at the University of California, Irvine in the [Center for Algorithms and Theory of Computation](https://ics.uci.edu/~theory/). I'm honored to be advised by [Dr. Michael Goodrich](https://ics.uci.edu/~goodrich/).
 
+Contact: claire [dot] to [at] uci [dot] edu
 
 ## Research
 
