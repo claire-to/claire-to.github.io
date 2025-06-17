@@ -30,8 +30,7 @@ My research lies within the field of Theoretical Computer Science. I naturally g
 ## Teaching
 
 **CS 161**: Design and Analysis of Algorithms  
-Instructor: [Michael Shindler](https://ics.uci.edu/~mikes/)
-
+Term(s): Fall 2025
 
 ## Education
 
