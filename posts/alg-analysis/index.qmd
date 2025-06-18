@@ -98,17 +98,19 @@ In theoretical computer science, unless specified otherwise, asymptotic notation
 
 An **upper bound** that shows the algorithm $A$'s running time grows **no faster** than some function $f(n)$ as the input size grows. 
 
-The function $f(n)$ graphed is *above or equal* to algorithm $A$'s graph.
+The function $f(n)$ graphed is asymptotically *above or equal* to algorithm $A$'s graph.
 
 ### Big Omega: $\Omega(f(n))$
 
 A **lower bound** that shows the algorithm $A$'s running time grows **no slower** than some function $f(n)$ as the input size grows. 
 
-The function $f(n)$ graphed is *below or equal* to algorithm $A$'s graph.
+The function $f(n)$ graphed is asymptotically *below or equal* to algorithm $A$'s graph.
 
 ### Theta: $\Theta(f(n))$
 
 This indicates a **tight bound**. In other words, for a specific algorithm, its upper and lower bounds are equivalent up to constant factors. This gives us a very precise understanding of how that algorithm's runtime grows. 
+
+The function $f(n)$ graphed is asymptotically *equivalent* to algorithm $A$'s graph.
 
 Solving recurrance relations, such as by the Master Theorem, gives us a tight bound on that algorithm's performance.
 
@@ -118,7 +120,7 @@ An algorithm is considered **asymptotically optimal** for a problem when it ha
 
 Similar to Big O, but shows the algorithm $A$'s running time is **strictly slower than** $f(n)$. 
 
-The function $f(n)$ graphed is *strictly above* algorithm $A$'s graph.
+The function $f(n)$ graphed is asymptotically *above* algorithm $A$'s graph.
 
 For example, $n$ grows strictly slower than $n \log n$.
 
@@ -126,10 +128,10 @@ For example, $n$ grows strictly slower than $n \log n$.
 
 Similar to Big Omega, but shows the algorithm $A$'s running time is **strictly faster than** $f(n)$. 
 
-The function $f(n)$ graphed is *strictly below* algorithm $A$'s graph.
+The function $f(n)$ graphed is asymptotically *below* algorithm $A$'s graph.
 
 For example, $n \log n$ grows strictly faster than $n$.
 
 ---
 
-I hope this helps clear up some common misconceptions!
+Remember, cases describe an algorithm's performance on specific types of input, while asymptotic bounds and its notation describe its growth rate relative to increasing input size. I hope this helps clear up some common misconceptions!
