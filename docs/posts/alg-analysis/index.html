@@ -240,33 +240,48 @@ window.Quarto = {
 <p>You can visualize this by plotting the runtime for increasing input sizes and comparing it to well-known functions like <span class="math inline">\(n\)</span>, <span class="math inline">\(n \log n\)</span>, or <span class="math inline">\(n^2\)</span>. This is the core idea behind asymptotic comparison of growth rates.</p>
 <section id="upper-bound" class="level3">
 <h3 class="anchored" data-anchor-id="upper-bound">Upper Bound</h3>
-<p>An upper bound means we’ve found some algorithm that solves the problem within a certain time. An upper bound for a problem is established by providing an algorithm that achieves that bound.</p>
+<p>An upper bound usually describes the <strong>maximum</strong> amount of work <strong>a specific algorithm</strong> requires to solve a problem.</p>
+<p>An upper bound for a <strong>problem</strong> is established by providing an algorithm that achieves that bound. Thus, an algorithm’s upper bound also provides an upper bound for the problem it solves.</p>
 <p>Upper bounds are often proven using:</p>
 <ul>
-<li>Explicit algorithm analysis<br>
-</li>
-<li>Reductions from known problems</li>
+<li>Direct algorithm analysis</li>
+<li>Recurrence relations</li>
+<li>Amortized analysis</li>
 </ul>
-<p>When we discuss upper bounds, we’re referring to the <strong>maximum</strong> amount of work <strong>a specific algorithm</strong> requires to solve a problem.</p>
 </section>
 <section id="lower-bound" class="level3">
 <h3 class="anchored" data-anchor-id="lower-bound">Lower Bound</h3>
-<p>A lower bound proves that any correct algorithm must do at least a certain amount of work for a problem. It shows the fundamental difficulty of the problem itself, not just the best possible performance of a particular algorithm.</p>
+<p>When discussing lower bounds, it’s important to distinguish between a bound on <strong>a specific algorithm</strong> and a bound on <strong>the inherent difficulty of a problem</strong>.</p>
+<section id="for-a-specific-algorithm" class="level4">
+<h4 class="anchored" data-anchor-id="for-a-specific-algorithm">For a Specific Algorithm</h4>
+<p>A lower bound for an algorithm indicates the <strong>minimum</strong> amount of work <strong>that specific algorithm</strong> requires to solve a problem in a given case, usually in the worst case.</p>
+<p>Lower bounds for algorithms are often proven using:</p>
+<ul>
+<li>Direct algorithm analysis</li>
+</ul>
+</section>
+<section id="for-a-problem" class="level4">
+<h4 class="anchored" data-anchor-id="for-a-problem">For a Problem</h4>
+<p>A lower bound for a problem indicates the <strong>minimum</strong> amount of work <strong>any correct algorithm</strong> requires to solve a problem, always in the worst case.</p>
+<p>This is a much stronger statement about the fundamental, inherent difficulty of the problem itself. Lower bound proofs for problems establish the theoretical minimum performance achievable under a defined model of computation.</p>
 <p>For example, searching for an element in an unsorted list requires <span class="math inline">\(n\)</span> comparisions because we must check every element. Otherwise, we might miss the one we didn’t check, and that could’ve been the correct one.</p>
-<p>Lower bounds are often proven using:</p>
+<p>Lower bounds for problems are often proven using:</p>
 <ul>
 <li>Counting arguments<br>
 </li>
 <li>Decision trees<br>
 </li>
-<li>Adversary arguments</li>
+<li>Adversary arguments<br>
+</li>
+<li>Information theory</li>
+<li>Reductions (P ?= NP)</li>
 </ul>
-<p>When we discuss lower bounds, we’re referring to the <strong>minimum</strong> amount of work that <strong>any correct algorithm</strong> must perform to solve the problem.</p>
+</section>
 </section>
 </section>
 <section id="asymptotic-notation" class="level2">
 <h2 class="anchored" data-anchor-id="asymptotic-notation">Asymptotic Notation</h2>
-<p>In theoretical computer science, unless specified otherwise, asymptotic notation usually refers to the <strong>worst-case</strong>. In practice, especially with randomized algorithms or heuristics, <strong>expected or average-case</strong> complexity may be more relevant.</p>
+<p>In theoretical computer science, unless specified otherwise, asymptotic notation usually refers to the <strong>worst case</strong>. In practice, especially with randomized algorithms or heuristics, <strong>expected or average case</strong> complexity may be more relevant.</p>
 <section id="big-o-ofn" class="level3">
 <h3 class="anchored" data-anchor-id="big-o-ofn">Big O: <span class="math inline">\(O(f(n))\)</span></h3>
 <p>An <strong>upper bound</strong> that shows the algorithm <span class="math inline">\(A\)</span>’s running time grows <strong>no faster</strong> than some function <span class="math inline">\(f(n)\)</span> as the input size grows.</p>
@@ -279,8 +294,9 @@ window.Quarto = {
 </section>
 <section id="theta-thetafn" class="level3">
 <h3 class="anchored" data-anchor-id="theta-thetafn">Theta: <span class="math inline">\(\Theta(f(n))\)</span></h3>
-<p>This indicates a <strong>tight bound</strong>. In other words, the upper and lower bounds are equivalent up to constant factors.</p>
-<p>Thus, the algorithm is <strong>asymptotically optimal</strong> because its growth rate matches the inherent difficulty of the problem, meaning we have proven that the problem cannot be solved any faster than what the algorithm achieves.</p>
+<p>This indicates a <strong>tight bound</strong>. In other words, for a specific algorithm, its upper and lower bounds are equivalent up to constant factors. This gives us a very precise understanding of how that algorithm’s runtime grows.</p>
+<p>Solving recurrance relations, such as by the Master Theorem, gives us a tight bound on that algorithm’s performance.</p>
+<p>An algorithm is considered&nbsp;<strong>asymptotically optimal</strong> for a problem&nbsp;when it has a tight bound that matches the problem’s proven lower bound, meaning we have found the fastest possible algorithm for that problem. If an algorithm’s worst-case upper bound matches the lower bound of the problem it solves, then it is implied that the algorithm has a tight bound.</p>
 </section>
 <section id="little-o-ofn" class="level3">
 <h3 class="anchored" data-anchor-id="little-o-ofn">Little o: <span class="math inline">\(o(f(n))\)</span></h3>
@@ -294,7 +310,7 @@ window.Quarto = {
 <p>The function <span class="math inline">\(f(n)\)</span> graphed is <em>strictly below</em> algorithm <span class="math inline">\(A\)</span>’s graph.</p>
 <p>For example, <span class="math inline">\(n \log n\)</span> grows strictly faster than <span class="math inline">\(n\)</span>.</p>
 <hr>
-<p>In algorithm analysis, we use asymptotic notation to express bounds on runtime as a way to measure performance across different input scenarios. When describing bounds, worst-case analysis is most common in theory, while average-case and expected-case analyses are more often used in practice. I hope this helps clear up some common misconceptions!</p>
+<p>I hope this helps clear up some common misconceptions!</p>
 
 
 </section>
