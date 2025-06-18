@@ -285,32 +285,33 @@ window.Quarto = {
 <section id="big-o-ofn" class="level3">
 <h3 class="anchored" data-anchor-id="big-o-ofn">Big O: <span class="math inline">\(O(f(n))\)</span></h3>
 <p>An <strong>upper bound</strong> that shows the algorithm <span class="math inline">\(A\)</span>’s running time grows <strong>no faster</strong> than some function <span class="math inline">\(f(n)\)</span> as the input size grows.</p>
-<p>The function <span class="math inline">\(f(n)\)</span> graphed is <em>above or equal</em> to algorithm <span class="math inline">\(A\)</span>’s graph.</p>
+<p>The function <span class="math inline">\(f(n)\)</span> graphed is asymptotically <em>above or equal</em> to algorithm <span class="math inline">\(A\)</span>’s graph.</p>
 </section>
 <section id="big-omega-omegafn" class="level3">
 <h3 class="anchored" data-anchor-id="big-omega-omegafn">Big Omega: <span class="math inline">\(\Omega(f(n))\)</span></h3>
 <p>A <strong>lower bound</strong> that shows the algorithm <span class="math inline">\(A\)</span>’s running time grows <strong>no slower</strong> than some function <span class="math inline">\(f(n)\)</span> as the input size grows.</p>
-<p>The function <span class="math inline">\(f(n)\)</span> graphed is <em>below or equal</em> to algorithm <span class="math inline">\(A\)</span>’s graph.</p>
+<p>The function <span class="math inline">\(f(n)\)</span> graphed is asymptotically <em>below or equal</em> to algorithm <span class="math inline">\(A\)</span>’s graph.</p>
 </section>
 <section id="theta-thetafn" class="level3">
 <h3 class="anchored" data-anchor-id="theta-thetafn">Theta: <span class="math inline">\(\Theta(f(n))\)</span></h3>
 <p>This indicates a <strong>tight bound</strong>. In other words, for a specific algorithm, its upper and lower bounds are equivalent up to constant factors. This gives us a very precise understanding of how that algorithm’s runtime grows.</p>
+<p>The function <span class="math inline">\(f(n)\)</span> graphed is asymptotically <em>equivalent</em> to algorithm <span class="math inline">\(A\)</span>’s graph.</p>
 <p>Solving recurrance relations, such as by the Master Theorem, gives us a tight bound on that algorithm’s performance.</p>
 <p>An algorithm is considered&nbsp;<strong>asymptotically optimal</strong> for a problem&nbsp;when it has a tight bound that matches the problem’s proven lower bound, meaning we have found the fastest possible algorithm for that problem. If an algorithm’s worst-case upper bound matches the lower bound of the problem it solves, then it is implied that the algorithm has a tight bound.</p>
 </section>
 <section id="little-o-ofn" class="level3">
 <h3 class="anchored" data-anchor-id="little-o-ofn">Little o: <span class="math inline">\(o(f(n))\)</span></h3>
 <p>Similar to Big O, but shows the algorithm <span class="math inline">\(A\)</span>’s running time is <strong>strictly slower than</strong> <span class="math inline">\(f(n)\)</span>.</p>
-<p>The function <span class="math inline">\(f(n)\)</span> graphed is <em>strictly above</em> algorithm <span class="math inline">\(A\)</span>’s graph.</p>
+<p>The function <span class="math inline">\(f(n)\)</span> graphed is asymptotically <em>above</em> algorithm <span class="math inline">\(A\)</span>’s graph.</p>
 <p>For example, <span class="math inline">\(n\)</span> grows strictly slower than <span class="math inline">\(n \log n\)</span>.</p>
 </section>
 <section id="little-omega-omegafn" class="level3">
 <h3 class="anchored" data-anchor-id="little-omega-omegafn">Little omega: <span class="math inline">\(\omega(f(n))\)</span></h3>
 <p>Similar to Big Omega, but shows the algorithm <span class="math inline">\(A\)</span>’s running time is <strong>strictly faster than</strong> <span class="math inline">\(f(n)\)</span>.</p>
-<p>The function <span class="math inline">\(f(n)\)</span> graphed is <em>strictly below</em> algorithm <span class="math inline">\(A\)</span>’s graph.</p>
+<p>The function <span class="math inline">\(f(n)\)</span> graphed is asymptotically <em>below</em> algorithm <span class="math inline">\(A\)</span>’s graph.</p>
 <p>For example, <span class="math inline">\(n \log n\)</span> grows strictly faster than <span class="math inline">\(n\)</span>.</p>
 <hr>
-<p>I hope this helps clear up some common misconceptions!</p>
+<p>Remember, cases describe an algorithm’s performance on specific types of input, while asymptotic bounds and its notation describe its growth rate relative to increasing input size. I hope this helps clear up some common misconceptions!</p>
 
 
 </section>
