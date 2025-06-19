@@ -1,41 +1,5 @@
 {
   "index.qmd": {
-    "index.html": "c13e569d"
-  },
-  "about.qmd": {
-    "about.html": "b308b821"
-  },
-  "blog.qmd": {
-    "blog.html": "cf6da604"
-  },
-  "publications.qmd": {
-    "publications.html": "c9a865af"
-  },
-  "pubs.qmd": {
-    "pubs.html": "d06adcd2"
-  },
-  "posts/nature-nurture/index.qmd": {
-    "index.html": "6476ff04"
-  },
-  "research.qmd": {
-    "research.html": "71761f0a"
-  },
-  "posts/graduate-essay/index.qmd": {
-    "index.html": "5f28dd8f"
-  },
-  "posts.qmd": {
-    "posts.html": "5704e1de"
-  },
-  "posts/staying/staying.qmd": {
-    "staying.html": "66f2bee2"
-  },
-  "posts/alg-analysis/index.qmd": {
-    "index.html": "8f6f799d"
-  },
-  "posts/inst-opt-algs/index.qmd": {
-    "index.html": "4bfdc285"
-  },
-  "posts/beyond-worst/index.qmd": {
-    "index.html": "dcb898c8"
+    "index.html": "e93b4ec1"
   }
 }

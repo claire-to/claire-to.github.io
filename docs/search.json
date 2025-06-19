@@ -33,5 +33,40 @@
     "title": "Understanding Algorithm Analysis",
     "section": "Asymptotic Notation",
     "text": "Asymptotic Notation\nIn theoretical computer science, unless specified otherwise, asymptotic notation usually refers to the worst case. In practice, especially with randomized algorithms or heuristics, expected or average case complexity may be more relevant.\n\nBig O: \\(O(f(n))\\)\nAn upper bound that shows the algorithm \\(A\\)’s running time grows no faster than some function \\(f(n)\\) as the input size grows.\nThe function \\(f(n)\\)’s graph is asymptotically above or equal to algorithm \\(A\\)’s graph.\n\n\nBig Omega: \\(\\Omega(f(n))\\)\nA lower bound that shows the algorithm \\(A\\)’s running time grows no slower than some function \\(f(n)\\) as the input size grows.\nThe function \\(f(n)\\)’s graph is asymptotically below or equal to algorithm \\(A\\)’s graph.\n\n\nTheta: \\(\\Theta(f(n))\\)\nThis indicates a tight bound. In other words, for a specific algorithm, its upper and lower bounds are equivalent up to constant factors. This gives us a very precise understanding of how that algorithm’s runtime grows.\nThe function \\(f(n)\\)’s graph is asymptotically equivalent to algorithm \\(A\\)’s graph.\nSolving recurrance relations, such as by using the Master Theorem, gives us a tight bound on that algorithm’s performance.\nAn algorithm is considered asymptotically optimal for a problem when it has a tight bound that matches the problem’s proven lower bound, meaning we have found the fastest possible algorithm for that problem. If an algorithm’s worst-case upper bound matches the lower bound of the problem it solves, then it is implied that the algorithm has a tight bound.\n\n\nLittle o: \\(o(f(n))\\)\nSimilar to Big O, but shows the algorithm \\(A\\)’s running time is strictly slower than \\(f(n)\\).\nThe function \\(f(n)\\)’s graph is asymptotically above algorithm \\(A\\)’s graph.\nFor example, \\(n\\) grows strictly slower than \\(n \\log n\\).\n\n\nLittle omega: \\(\\omega(f(n))\\)\nSimilar to Big Omega, but shows the algorithm \\(A\\)’s running time is strictly faster than \\(f(n)\\).\nThe function \\(f(n)\\)’s graph is asymptotically below algorithm \\(A\\)’s graph.\nFor example, \\(n \\log n\\) grows strictly faster than \\(n\\).\n\nRemember, cases describe an algorithm’s performance on specific types of input, while asymptotic bounds and its notation describe its growth rate relative to increasing input size. I hope this helps clear up some common misconceptions!"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Claire A. To",
+    "section": "",
+    "text": "Hello! I’m a PhD student in Computer Science at the University of California, Irvine in the Center for Algorithms and Theory of Computation. I’m honored to be advised by Dr. Michael Goodrich.\nContact: claire [dot] to [at] uci [dot] edu"
+  },
+  {
+    "objectID": "index.html#about",
+    "href": "index.html#about",
+    "title": "Claire A. To",
+    "section": "",
+    "text": "Hello! I’m a PhD student in Computer Science at the University of California, Irvine in the Center for Algorithms and Theory of Computation. I’m honored to be advised by Dr. Michael Goodrich.\nContact: claire [dot] to [at] uci [dot] edu"
+  },
+  {
+    "objectID": "index.html#research",
+    "href": "index.html#research",
+    "title": "Claire A. To",
+    "section": "Research",
+    "text": "Research\nMy research lies within the field of Theoretical Computer Science. I naturally gravitate toward algorithms and data structures, particularly when applied to problems in computational geometry. My interest in research grew from my experiences in computer science education, which reshaped how I think about learning and inspired me to pursue a PhD."
+  },
+  {
+    "objectID": "index.html#teaching",
+    "href": "index.html#teaching",
+    "title": "Claire A. To",
+    "section": "Teaching",
+    "text": "Teaching\nCS 161: Design and Analysis of Algorithms\nTerm(s): Fall 2025"
+  },
+  {
+    "objectID": "index.html#education",
+    "href": "index.html#education",
+    "title": "Claire A. To",
+    "section": "Education",
+    "text": "Education\nUniversity of California, Irvine\nPh.D in Computer Science | Sept 2025 - Present\nOrange Coast College\nA.A in Dance | Aug 2024 - Present\nUniversity of California, Irvine\nB.S in Computer Science | Sept 2023 - Jun 2025\nOrange Coast College\nA.A in Liberal Arts | Aug 2021 - May 2023\nOrange Coast College\nA.S in Computer Science | Aug 2020 - May 2023\nHuntington Beach High School\nHigh School Diploma | Aug 2017 - May 2021"
   }
 ]
