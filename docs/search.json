@@ -165,7 +165,7 @@
     "href": "posts/beyond-worst/index.html#adaptive-analysis",
     "title": "Beyond the Worst-Case Analysis",
     "section": "Adaptive Analysis",
-    "text": "Adaptive Analysis\nAdaptive analysis measures an algorithm’s execution cost not only as a function of input size, but also considering other parameters that more accurately capture the input’s inherent difficulty (e.g., output size).\nFor example, in computational geometry, there are well-known output-sensitive algorithms to compute 2D and 3D convex hulls in \\(O(n \\text{ log } h)\\), where \\(h\\) is the output size (i.e., the number of points on the hull). The less points there are on the hull, the faster the algorithm runs."
+    "text": "Adaptive Analysis\nAdaptive analysis measures an algorithm’s execution cost not only as a function of input size, but also with respect to other parameters that can more precisely capture the input’s inherent difficulty (e.g., output size).\nFor example, in computational geometry, there are well-known output-sensitive algorithms to compute 2D and 3D convex hulls in \\(O(n \\text{ log } h)\\), where \\(h\\) is the output size (i.e., the number of points on the hull). The fewer points there are on the hull, the faster the algorithm will run."
   },
   {
     "objectID": "posts/beyond-worst/index.html#instance-optimal-algorithms",
