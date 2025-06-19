@@ -8,7 +8,7 @@ title-block-banner: true
 
 **Worst-case analysis** measures an algorithm by its performance on the hardest, adversarial input, often yielding an overly pessimistic result. This brings to light the discussion of **beyond worst-case analysis**: a more fine-grained approach that allows us to more accurately measure an algorithm’s performance.
 
-My first theory research project, which I was fortunate to be part of during my undergrad, was inspired by the paper *"Instance-Optimal Geometric Algorithms" by Peyman Afshani, Jérémy Barbay, and Timothy Chan*. Here, I'll briefly provide an overview some of their core concepts.
+My first theory research project, which I was fortunate to be part of during my undergrad, was inspired by the paper *"Instance-Optimal Geometric Algorithms" by Peyman Afshani, Jérémy Barbay, and Timothy Chan*. Here, I'll briefly provide an overview of some of the core concepts.
 
 ## Adaptive Analysis
 
