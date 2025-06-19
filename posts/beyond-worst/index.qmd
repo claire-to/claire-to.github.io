@@ -1,0 +1,49 @@
+---
+title: "Beyond the Worst-Case Analysis"
+author: "Claire To"
+date: "2025-06-18"
+categories: [algorithms, research]
+title-block-banner: true
+---
+
+**Worst-case analysis** measures an algorithm by its performance on the hardest, adversarial input, often yielding an overly pessimistic result. This brings to light the discussion of **beyond worst-case analysis**: a more fine-grained approach that allows us to more accurately measure an algorithm’s performance.
+
+My first theory research project, which I was fortunate to be part of during my undergrad, was inspired by the paper *"Instance-Optimal Geometric Algorithms" by Peyman Afshani, Jérémy Barbay, and Timothy Chan*. Here, I'll briefly provide an overview some of their core concepts.
+
+## Adaptive Analysis
+
+**Adaptive analysis** measures an algorithm's execution cost not only as a function of input size, but also considering other parameters that more accurately capture the input's inherent difficulty (e.g., output size).
+
+For example, in computational geometry, there are well-known output-sensitive algorithms to compute 2D and 3D convex hulls in $O(n \text{ log } h)$, where $h$ is the output size (i.e., the number of points on the hull). The less points there are on the hull, the faster the algorithm runs.
+
+## Instance-Optimal Algorithms
+
+**Instance-optimal algorithms** represent the ultimate form of adaptive analysis. An algorithm is instance-optimal if its cost is *within a constant factor of the best possible algorithm's cost* on that exact same input. 
+
+For example, the 2D convex hull problem has a worst-case complexity of $\Theta (n \text{ log } n)$ in the algebraic computation tree model, but algorithms exist that can solve this problem on certain input instances (e.g. sorted points) in $O(n)$ time. An instance-optimal algorithm would need to match this runtime.
+
+Likewise, to sort a list of numbers, a list that is already sorted should run faster could be “sorted” in $O(n)$ time. We only need to check if the list is already sorted then we can return it without any additional operations. An instance-optimal sorting algorithm would need to achieve an $O(n)$ time on this input.
+
+Given the strictness of this definition, the paper introduces two variants of instance optimality: **order-oblivious** and **random-order settings**. 
+
+These variations allow us to show instance optimality against a strong benchmark even when a universally ultimate optimal algorithm is a theoretical ideal that is unknown or unproven. In my project, we worked on improving upon algorithms in the order-oblivious setting. (?)
+
+### Order-Oblivious Setting
+
+An algorithm $A$ is considered instance-optimal in the **order-oblivious setting** if, for any given input set of elements, its **worst-case** runtime (across *all possible permutations* of that input) is within a constant factor of the **best possible worst-case** runtime achieved by any algorithm $A'$ from the class $C$ of *all correct algorithms*.
+
+Because this compares the performance of algorithms $A$ and $A’$ on their own **worst permutation** (which may not be the same between them), this analysis ensures that the algorithm's performance guarantee holds *regardless of how the input elements are initially ordered*. In other words, the analysis conceptually shuffles the input to find the hardest scenario for a given algorithm and input set, even if the algorithm itself does not randomize the input.
+
+This implies that such an algorithm is also **optimal output-sensitive** and **optimal adaptive** with respect to any parameters that are independent of the input's order (e.g., data spread, expected size, or relative positions of points).
+
+### Random-Order Setting
+
+An algorithm $A$ is considered instance-optimal in the **random-order setting** if, for any given input set of elements, its **average** runtime (across *all possible permutations* of that input) is within a constant factor of the **best possible average** runtime achieved by any algorithm $A'$ from the class $C$ of *all correct algorithms*. 
+
+The analysis implicitly creates a *uniform probability distribution over all permutations of the input set* and then calculates the algorithm's average performance under this distribution. 
+
+Therefore, this is a *stronger definition than order-oblivious instance optimality* because the average runtime across all permutations of that set will never be worse than the worst runtime across all permutations of that same input set. By averaging over all possible input permutations, this setting captures the algorithm's expected performance, preventing the influence of either best-case or worst-case input ordering.
+
+This setting is particularly relevant for analyzing algorithms that incorporate randomness. Algorithms that are instance-optimal in the random-order setting are competitive against **randomized** or **randomized incremental algorithms** (where input elements are randomly permuted as a preprocessing step) and **traditional average-case optimality** (which assumes an input probability distribution).
+
+In this dynamic field of algorithm analysis, adaptive and instance-optimal analysis are only two out of the many powerful approaches. To delve deeper, *Tim Roughgarden’s “Beyond the Worst-Case Analysis of Algorithms”* course and textbook covers a number of modeling methods and frameworks for going beyond worst-case analysis. Ultimately, the goal of these techniques is to bridge the gap between theoretical guarantees and real-world performance.

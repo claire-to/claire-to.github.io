@@ -2,7 +2,7 @@
 title: "Understanding Algorithm Analysis"
 author: "Claire To"
 date: "2025-06-16"
-categories: [algorithms]
+categories: [algorithms, teaching]
 title-block-banner: true
 ---
 

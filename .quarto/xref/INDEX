@@ -31,5 +31,11 @@
   },
   "posts/alg-analysis/index.qmd": {
     "index.html": "8f6f799d"
+  },
+  "posts/inst-opt-algs/index.qmd": {
+    "index.html": "4bfdc285"
+  },
+  "posts/beyond-worst/index.qmd": {
+    "index.html": "dcb898c8"
   }
 }
