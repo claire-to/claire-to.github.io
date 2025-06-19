@@ -16,7 +16,7 @@ When analyzing how long an algorithm takes, we consider how it behaves in differ
 
 ### Best Case
 
-The shortest possible time an algorithm takes on any input.
+The **shortest** possible time an algorithm takes on any input.
 
 For example, when searching for a number in a list, the best case could be finding it at the first index. In insertion sort, the best case is when the array is already sorted.
 
@@ -24,7 +24,7 @@ This is less useful in practice, since it’s too optimistic and best case scena
 
 ### Worst Case
 
-The longest possible time an algorithm takes on any input.
+The **longest** possible time an algorithm takes on any input.
 
 For example, the worst case in searching for a number in a list is when the number is found at the very last position checked or not found in the list at all. In insertion sort, the worst case occurs when the array is reverse-sorted.
 
@@ -32,7 +32,7 @@ This is the most pessimistic, but also a reliable way to measure an algorithm’
 
 ### Average Case
 
-The expected runtime over all inputs, assuming a certain input distribution. 
+The **expected** runtime over all inputs, assuming a certain input distribution. 
 
 That means we average the running times of the algorithm over all possible inputs, weighted by their probability.
 
@@ -46,13 +46,13 @@ That means we average the running times of the algorithm over all possible input
 
 ## Asymptotic Bounds
 
-In algorithm analysis, we often use asymptotic bounds to describe how an algorithm's running time grows as the input grows larger.
+In algorithm analysis, we often use asymptotic bounds to describe how an algorithm's running time **grows** as the input grows larger.
 
 You can visualize this by plotting the runtime for increasing input sizes and comparing it to well-known functions like $n$, $n \log n$, or $n^2$. This is the core idea behind asymptotic comparison of growth rates.
 
 ### Upper Bound
 
-An upper bound usually describes the **maximum** amount of work **a specific algorithm** requires to solve a problem. 
+An **upper bound** usually describes the **maximum** amount of work **a specific algorithm** requires to solve a problem. 
 
 An upper bound for a **problem** is established by providing an algorithm that achieves that bound. Thus, an algorithm's upper bound also provides an upper bound for the problem it solves.
 
@@ -68,7 +68,7 @@ When discussing lower bounds, it's important to distinguish between a bound on *
 
 #### For a Specific Algorithm
 
-A lower bound for an algorithm indicates the **minimum** amount of work **that specific algorithm** requires to solve a problem in a given case, usually in the worst case.
+A **lower bound** for an algorithm indicates the **minimum** amount of work **that specific algorithm** requires to solve a problem in a given case, usually in the worst case.
 
 Lower bounds for algorithms are often proven using:
 
@@ -76,9 +76,9 @@ Lower bounds for algorithms are often proven using:
 
 #### For a Problem
 
-A lower bound for a problem indicates the **minimum** amount of work **any correct algorithm** requires to solve a problem, always in the worst case.
+A **lower bound** for a problem indicates the **minimum** amount of work **any correct algorithm** requires to solve a problem, always in the worst case.
 
-This is a much stronger statement about the fundamental, inherent difficulty of the problem itself. Lower bound proofs for problems establish the theoretical minimum performance achievable under a defined model of computation.
+This is a much **stronger statement** about the fundamental, inherent difficulty of the problem itself. Lower bound proofs for problems establish the **theoretical best** performance achievable under a defined model of computation.
 
 For example, searching for an element in an unsorted list requires $n$ comparisions because we must check every element. Otherwise, we might miss the one we didn’t check, and that could’ve been the correct one.
 
@@ -112,7 +112,7 @@ This indicates a **tight bound**. In other words, for a specific algorithm, its 
 
 The function $f(n)$'s graph is asymptotically *equivalent* to algorithm $A$'s graph.
 
-Solving recurrance relations, such as by the Master Theorem, gives us a tight bound on that algorithm's performance.
+Solving recurrance relations, such as by using the Master Theorem, gives us a tight bound on that algorithm's performance.
 
 An algorithm is considered **asymptotically optimal** for a problem when it has a tight bound that matches the problem's proven lower bound, meaning we have found the fastest possible algorithm for that problem. If an algorithm's worst-case upper bound matches the lower bound of the problem it solves, then it is implied that the algorithm has a tight bound.
 

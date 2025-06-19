@@ -46,4 +46,6 @@ Therefore, this is a *stronger definition than order-oblivious instance optimali
 
 This setting is particularly relevant for analyzing algorithms that incorporate randomness. Algorithms that are instance-optimal in the random-order setting are competitive against **randomized** or **randomized incremental algorithms** (where input elements are randomly permuted as a preprocessing step) and **traditional average-case optimality** (which assumes an input probability distribution).
 
+---
+
 In this dynamic field of algorithm analysis, adaptive and instance-optimal analysis are only two out of the many powerful approaches. To delve deeper, *Tim Roughgarden’s “Beyond the Worst-Case Analysis of Algorithms”* course and textbook covers a number of modeling methods and frameworks for going beyond worst-case analysis. Ultimately, the goal of these techniques is to bridge the gap between theoretical guarantees and real-world performance.
