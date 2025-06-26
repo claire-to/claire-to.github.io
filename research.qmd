@@ -4,7 +4,7 @@ title-block-banner: true
 ---
 
 #### [Entropy-Bounded Computational Geometry Made Easier and Sensitive to Sortedness]()
-David Eppstein, Michael T. Goodrich, Abraham Illickan, Claire A. To  
+David Eppstein, Michael T. Goodrich, Abraham M. Illickan, Claire A. To  
 [The 37th Canadian Conference on Computational Geometry (CCCG 2025)](https://sites.google.com/view/cccgwads-2025/cccg-2025)  
 TBD  
 [Paper]() | 
