@@ -1,5 +1,17 @@
 {
   "index.qmd": {
     "index.html": "e93b4ec1"
+  },
+  "research.qmd": {
+    "research.html": "a1425d39"
+  },
+  "beamer.qmd": {
+    "beamer.tex": "000dabf7"
+  },
+  "posts/alg-analysis/index.qmd": {
+    "index.html": "240de385"
+  },
+  "posts.qmd": {
+    "posts.html": "3bac3887"
   }
 }
