@@ -6,7 +6,7 @@ title-block-banner: true
 #### [Entropy-Bounded Computational Geometry Made Easier and Sensitive to Sortedness]()
 David Eppstein, Michael T. Goodrich, Abraham M. Illickan, Claire A. To  
 [The 37th Canadian Conference on Computational Geometry (CCCG 2025)](https://sites.google.com/view/cccgwads-2025/cccg-2025)  
-TBD  
+Instance-optimal algorithms achieve the performance of the best correct algorithm on every input. By leveraging input structure and sortedness, we design simple algorithms for classic computational geometry problems—maxima sets, convex hulls, and visibility—and prove new bounds under a complexity measure sensitive to both properties.  
 [Paper]() | 
 [Poster](/research/inst-opt-urop2025-poster.pdf) | 
 [Slides]()
