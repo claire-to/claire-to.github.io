@@ -13,5 +13,8 @@
   },
   "posts.qmd": {
     "posts.html": "3bac3887"
+  },
+  "posts/beyond-worst/index.qmd": {
+    "index.html": "7c491398"
   }
 }

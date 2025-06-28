@@ -176,7 +176,7 @@ window.Quarto = {
    
   <ul>
   <li><a href="#adaptive-analysis" id="toc-adaptive-analysis" class="nav-link active" data-scroll-target="#adaptive-analysis">Adaptive Analysis</a></li>
-  <li><a href="#instance-optimal-algorithms" id="toc-instance-optimal-algorithms" class="nav-link" data-scroll-target="#instance-optimal-algorithms">Instance-Optimal Algorithms</a>
+  <li><a href="#instance-optimality" id="toc-instance-optimality" class="nav-link" data-scroll-target="#instance-optimality">Instance Optimality</a>
   <ul class="collapse">
   <li><a href="#order-oblivious-setting" id="toc-order-oblivious-setting" class="nav-link" data-scroll-target="#order-oblivious-setting">Order-Oblivious Setting</a></li>
   <li><a href="#random-order-setting" id="toc-random-order-setting" class="nav-link" data-scroll-target="#random-order-setting">Random-Order Setting</a></li>
@@ -198,13 +198,13 @@ window.Quarto = {
 <p><strong>Adaptive analysis</strong> measures an algorithm’s execution cost not only as a function of input size, but also with respect to other parameters that can more precisely capture the input’s inherent difficulty (e.g., output size).</p>
 <p>For example, in computational geometry, there are well-known output-sensitive algorithms to compute 2D and 3D convex hulls in <span class="math inline">\(O(n \text{ log } h)\)</span>, where <span class="math inline">\(h\)</span> is the output size (i.e., the number of points on the hull). The fewer points there are on the hull, the faster the algorithm will run.</p>
 </section>
-<section id="instance-optimal-algorithms" class="level2">
-<h2 class="anchored" data-anchor-id="instance-optimal-algorithms">Instance-Optimal Algorithms</h2>
-<p><strong>Instance-optimal algorithms</strong> represent the ultimate form of adaptive analysis. An algorithm is instance-optimal if its cost is <em>within a constant factor of the best possible algorithm’s cost</em> on that exact same input.</p>
-<p>For example, the 2D convex hull problem has a worst-case complexity of <span class="math inline">\(\Theta (n \text{ log } n)\)</span> in the algebraic computation tree model, but algorithms exist that can solve this problem on certain input instances (e.g.&nbsp;sorted points) in <span class="math inline">\(O(n)\)</span> time. An instance-optimal algorithm would need to match this runtime.</p>
-<p>Likewise, to sort a list of numbers, a list that is already sorted should run faster could be “sorted” in <span class="math inline">\(O(n)\)</span> time. We only need to check if the list is already sorted then we can return it without any additional operations. An instance-optimal sorting algorithm would need to achieve an <span class="math inline">\(O(n)\)</span> time on this input.</p>
+<section id="instance-optimality" class="level2">
+<h2 class="anchored" data-anchor-id="instance-optimality">Instance Optimality</h2>
+<p><strong>Instance optimality</strong> represents the ultimate form of adaptive analysis. An algorithm is instance-optimal if its cost is <em>within a constant factor of the best possible algorithm’s cost</em> on that exact same input.</p>
+<p>For example, the 2D convex hull problem has a worst-case complexity of <span class="math inline">\(\Theta (n \text{ log } n)\)</span> in the algebraic computation tree model (a common model for analyzing geometric algorithms where only comparisons and basic arithmetic are allowed), but algorithms exist that can solve this problem on certain input instances (e.g.&nbsp;sorted points) in <span class="math inline">\(O(n)\)</span> time. An instance-optimal algorithm would need to match this runtime.</p>
+<p>Likewise, to sort a list of numbers, a list that is already sorted should run faster could be “sorted” in <span class="math inline">\(O(n)\)</span> time. We only need to check if the list is already sorted then we can return it without any additional operations. In the comparison-based model (where algorithms use only element comparisons), an instance-optimal sorting algorithm would need to achieve <span class="math inline">\(O(n)\)</span> time on already-sorted input if there exists some comparison-based algorithm that does so.</p>
 <p>Given the strictness of this definition, the paper introduces two variants of instance optimality: <strong>order-oblivious</strong> and <strong>random-order settings</strong>.</p>
-<p>These variations allow us to show instance optimality against a strong benchmark even when a universally ultimate optimal algorithm is a theoretical ideal that is unknown or unproven. In my project, we worked on improving upon algorithms in the order-oblivious setting. (?)</p>
+<p>These variations allow us to show instance optimality against a strong benchmark even when a universally ultimate optimal algorithm is a theoretical ideal that is unknown or unproven. In my project, we worked on improving upon and proving algorithms in the order-oblivious setting.</p>
 <section id="order-oblivious-setting" class="level3">
 <h3 class="anchored" data-anchor-id="order-oblivious-setting">Order-Oblivious Setting</h3>
 <p>An algorithm <span class="math inline">\(A\)</span> is considered instance-optimal in the <strong>order-oblivious setting</strong> if, for any given input set of elements, its <strong>worst-case</strong> runtime (across <em>all possible permutations</em> of that input) is within a constant factor of the <strong>best possible worst-case</strong> runtime achieved by any algorithm <span class="math inline">\(A'\)</span> from the class <span class="math inline">\(C\)</span> of <em>all correct algorithms</em>.</p>

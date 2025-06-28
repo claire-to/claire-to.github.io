@@ -16,17 +16,17 @@ My first theory research project, which I was fortunate to be part of during my 
 
 For example, in computational geometry, there are well-known output-sensitive algorithms to compute 2D and 3D convex hulls in $O(n \text{ log } h)$, where $h$ is the output size (i.e., the number of points on the hull). The fewer points there are on the hull, the faster the algorithm will run.
 
-## Instance-Optimal Algorithms
+## Instance Optimality
 
-**Instance-optimal algorithms** represent the ultimate form of adaptive analysis. An algorithm is instance-optimal if its cost is *within a constant factor of the best possible algorithm's cost* on that exact same input. 
+**Instance optimality** represents the ultimate form of adaptive analysis. An algorithm is instance-optimal if its cost is *within a constant factor of the best possible algorithm's cost* on that exact same input. 
 
-For example, the 2D convex hull problem has a worst-case complexity of $\Theta (n \text{ log } n)$ in the algebraic computation tree model, but algorithms exist that can solve this problem on certain input instances (e.g. sorted points) in $O(n)$ time. An instance-optimal algorithm would need to match this runtime.
+For example, the 2D convex hull problem has a worst-case complexity of $\Theta (n \text{ log } n)$ in the algebraic computation tree model (a common model for analyzing geometric algorithms where only comparisons and basic arithmetic are allowed), but algorithms exist that can solve this problem on certain input instances (e.g. sorted points) in $O(n)$ time. An instance-optimal algorithm would need to match this runtime.
 
-Likewise, to sort a list of numbers, a list that is already sorted should run faster could be “sorted” in $O(n)$ time. We only need to check if the list is already sorted then we can return it without any additional operations. An instance-optimal sorting algorithm would need to achieve an $O(n)$ time on this input.
+Likewise, to sort a list of numbers, a list that is already sorted should run faster could be “sorted” in $O(n)$ time. We only need to check if the list is already sorted then we can return it without any additional operations. In the comparison-based model (where algorithms use only element comparisons), an instance-optimal sorting algorithm would need to achieve $O(n)$ time on already-sorted input if there exists some comparison-based algorithm that does so.
 
 Given the strictness of this definition, the paper introduces two variants of instance optimality: **order-oblivious** and **random-order settings**. 
 
-These variations allow us to show instance optimality against a strong benchmark even when a universally ultimate optimal algorithm is a theoretical ideal that is unknown or unproven. In my project, we worked on improving upon algorithms in the order-oblivious setting. (?)
+These variations allow us to show instance optimality against a strong benchmark even when a universally ultimate optimal algorithm is a theoretical ideal that is unknown or unproven. In my project, we worked on improving upon and proving algorithms in the order-oblivious setting.
 
 ### Order-Oblivious Setting
 
