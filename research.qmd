@@ -3,7 +3,7 @@ title: "Research"
 title-block-banner: true
 ---
 
-#### [Entropy-Bounded Computational Geometry Made Easier and Sensitive to Sortedness]()
+#### [Entropy-Bounded Computational Geometry Made Easier and Sensitive to Sortedness](https://arxiv.org/abs/2508.20489)
 David Eppstein, Michael T. Goodrich, Abraham M. Illickan, Claire A. To  
 [The 37th Canadian Conference on Computational Geometry (CCCG 2025)](https://sites.google.com/view/cccgwads-2025/cccg-2025)  
 We study instance optimality--algorithms that achieve the performance of the best correct algorithm on every input, with respect to a measure. By leveraging input structure and sortedness, we design simple algorithms for classic computational geometry problems, including maxima set, convex hull, and visibility, and prove new bounds under a complexity measure sensitive to both properties.  
