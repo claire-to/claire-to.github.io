@@ -1,6 +1,6 @@
 ---
 title: "Claire A. To"
-image: grad.jpg
+image: imgs/grad.jpg
 about:
   template: trestles
   image-width: 10em

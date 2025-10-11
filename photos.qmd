@@ -1,0 +1,14 @@
+---
+title: "Photos"
+title-block-banner: true
+---
+
+::: {layout="[[1,1], [1]]"}
+
+![SIGCSE 2025](imgs/sigcse.jpeg){.lightbox}
+
+![CCCG 2025](imgs/cccg-me.png){.lightbox}
+
+![WADS/CCCG 2025](imgs/cccg-group.jpeg){.lightbox}
+
+:::
