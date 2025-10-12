@@ -4,7 +4,5 @@ title-block-banner: true
 ---
 
 ### Algorithm Analysis  
-- [Blog post](/posts/alg-analysis/index.qmd)
-
-### Master Theorem  
-- [Lecture slides](./master-theorem.pdf)
+- [General blog post](/posts/alg-analysis/index.qmd)
+- [Masters theorem lecture](./master-theorem.pdf)
