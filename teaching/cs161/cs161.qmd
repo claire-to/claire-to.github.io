@@ -1,0 +1,10 @@
+---
+title: "CS 161 Resources"
+title-block-banner: true
+---
+
+### Algorithm Analysis  
+- [Blog post](/posts/alg-analysis/index.qmd)
+
+### Master Theorem  
+- [Lecture slides](./master-theorem.pdf)

@@ -25,5 +25,8 @@
   },
   "posts/staying/staying.qmd": {
     "staying.html": "8cdd05fc"
+  },
+  "teaching/cs161/cs161.qmd": {
+    "cs161.html": "e53a99dc"
   }
 }

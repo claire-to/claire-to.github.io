@@ -60,7 +60,7 @@
     "href": "index.html#teaching",
     "title": "Claire A. To",
     "section": "Teaching",
-    "text": "Teaching\nCS 161: Design and Analysis of Algorithms\nTerm(s): Fall 2025"
+    "text": "Teaching\nCS 161: Design and Analysis of Algorithms Term(s): Fall 2025"
   },
   {
     "objectID": "index.html#education",
@@ -138,5 +138,19 @@
     "title": "Staying Long Enough to Belong",
     "section": "Friendships",
     "text": "Friendships\nAs for friends, I’ve had to rebuild my social circle from scratch. It forced me to take initiative and present myself as the person I wished I was. I was never that social girl, or the popular one, or the confident one, the one unafraid to speak up. I wanted to be her, but the gap between who I was and who I wanted to be felt so vast that it almost felt like acting. I was playing a role to be likable, someone accepted.\nOver time, I started to become that person. Not by pretending, but by slowly stepping into it until it felt natural. Now, I’m someone who can be warm and outgoing when needed, while still keeping my core beliefs and values unshakable and true to myself. Having had to start over before, I now trust that I’ll be okay wherever I go because I know how to rebuild from nothing.\nMaybe all of these experiences are why I am who I am today. I don’t know what the future holds or if everything will crash and burn one day. But I want to believe that all this struggle wasn’t for nothing. That everything I’ve learned — the pain, the persistence, the growth — will lead to some kind of success, whatever that ends up meaning for me. I’ve rebuilt before. I’ve started from the beginning in so many areas of my life: physically, intellectually, socially. And I think, no matter what happens, I’ll be able to do it again if I need to."
+  },
+  {
+    "objectID": "teaching/cs161/cs161.html",
+    "href": "teaching/cs161/cs161.html",
+    "title": "CS 161 Resources",
+    "section": "",
+    "text": "Algorithm Analysis\n\nBlog post\n\n\n\nMaster Theorem\n\nLecture slides"
+  },
+  {
+    "objectID": "teaching/cs161/cs161.html#master-theorem",
+    "href": "teaching/cs161/cs161.html#master-theorem",
+    "title": "CS 161 Course Materials",
+    "section": "",
+    "text": "Lecture slides"
   }
 ]

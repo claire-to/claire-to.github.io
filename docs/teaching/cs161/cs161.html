@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Claire To">
-<meta name="dcterms.date" content="2025-06-16">
 
-<title>Understanding Algorithm Analysis – Claire To</title>
+<title>CS 161 Resources – Claire To</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -69,35 +67,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
@@ -142,30 +111,14 @@ window.Quarto = {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Understanding Algorithm Analysis</h1>
-                                <div class="quarto-categories">
-                <div class="quarto-category">algorithms</div>
-                <div class="quarto-category">teaching</div>
-              </div>
-                  </div>
+      <h1 class="title">CS 161 Resources</h1>
+                      </div>
   </div>
     
   
   <div class="quarto-title-meta">
 
-      <div>
-      <div class="quarto-title-meta-heading">Author</div>
-      <div class="quarto-title-meta-contents">
-               <p>Claire To </p>
-            </div>
-    </div>
       
-      <div>
-      <div class="quarto-title-meta-heading">Published</div>
-      <div class="quarto-title-meta-contents">
-        <p class="date">June 16, 2025</p>
-      </div>
-    </div>
     
       
     </div>
@@ -179,25 +132,8 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#case-analysis" id="toc-case-analysis" class="nav-link active" data-scroll-target="#case-analysis">Case Analysis</a>
-  <ul class="collapse">
-  <li><a href="#best-case" id="toc-best-case" class="nav-link" data-scroll-target="#best-case">Best Case</a></li>
-  <li><a href="#worst-case" id="toc-worst-case" class="nav-link" data-scroll-target="#worst-case">Worst Case</a></li>
-  <li><a href="#average-case" id="toc-average-case" class="nav-link" data-scroll-target="#average-case">Average Case</a></li>
-  </ul></li>
-  <li><a href="#asymptotic-bounds" id="toc-asymptotic-bounds" class="nav-link" data-scroll-target="#asymptotic-bounds">Asymptotic Bounds</a>
-  <ul class="collapse">
-  <li><a href="#upper-bound" id="toc-upper-bound" class="nav-link" data-scroll-target="#upper-bound">Upper Bound</a></li>
-  <li><a href="#lower-bound" id="toc-lower-bound" class="nav-link" data-scroll-target="#lower-bound">Lower Bound</a></li>
-  </ul></li>
-  <li><a href="#asymptotic-notation" id="toc-asymptotic-notation" class="nav-link" data-scroll-target="#asymptotic-notation">Asymptotic Notation</a>
-  <ul class="collapse">
-  <li><a href="#big-o-ofn" id="toc-big-o-ofn" class="nav-link" data-scroll-target="#big-o-ofn">Big O: <span class="math inline">\(O(f(n))\)</span></a></li>
-  <li><a href="#big-omega-omegafn" id="toc-big-omega-omegafn" class="nav-link" data-scroll-target="#big-omega-omegafn">Big Omega: <span class="math inline">\(\Omega(f(n))\)</span></a></li>
-  <li><a href="#theta-thetafn" id="toc-theta-thetafn" class="nav-link" data-scroll-target="#theta-thetafn">Theta: <span class="math inline">\(\Theta(f(n))\)</span></a></li>
-  <li><a href="#little-o-ofn" id="toc-little-o-ofn" class="nav-link" data-scroll-target="#little-o-ofn">Little o: <span class="math inline">\(o(f(n))\)</span></a></li>
-  <li><a href="#little-omega-omegafn" id="toc-little-omega-omegafn" class="nav-link" data-scroll-target="#little-omega-omegafn">Little omega: <span class="math inline">\(\omega(f(n))\)</span></a></li>
-  </ul></li>
+  <li><a href="#algorithm-analysis" id="toc-algorithm-analysis" class="nav-link active" data-scroll-target="#algorithm-analysis">Algorithm Analysis</a></li>
+  <li><a href="#master-theorem" id="toc-master-theorem" class="nav-link" data-scroll-target="#master-theorem">Master Theorem</a></li>
   </ul>
 </nav>
     </div>
@@ -208,118 +144,19 @@ window.Quarto = {
 
 
 
-<p>I’ve noticed that a lot of students – whether they’re currently taking algorithms or have already completed the course – often confuse cases with bounds when discussing algorithm analysis. I know I personally have had to wrestle with this concept myself for quite a while.</p>
-<p>My hope is that this helps clear up some of that confusion and provides an intuitive, tangible overview of these concepts. It’s not meant to be a comprehensive or formal discussion, as there are already countless resources online, but rather a more approachable supplement for those who already have some background.</p>
-<section id="case-analysis" class="level2">
-<h2 class="anchored" data-anchor-id="case-analysis">Case Analysis</h2>
-<p>When analyzing how long an algorithm takes, we consider how it behaves in different cases, depending on the input.</p>
-<section id="best-case" class="level3">
-<h3 class="anchored" data-anchor-id="best-case">Best Case</h3>
-<p>The <strong>shortest</strong> possible time an algorithm takes on any input.</p>
-<p>For example, when searching for a number in a list, the best case could be finding it at the first index. In insertion sort, the best case is when the array is already sorted.</p>
-<p>This is less useful in practice, since it’s too optimistic and best case scenarios are unlikely to happen.</p>
-</section>
-<section id="worst-case" class="level3">
-<h3 class="anchored" data-anchor-id="worst-case">Worst Case</h3>
-<p>The <strong>longest</strong> possible time an algorithm takes on any input.</p>
-<p>For example, the worst case in searching for a number in a list is when the number is found at the very last position checked or not found in the list at all. In insertion sort, the worst case occurs when the array is reverse-sorted.</p>
-<p>This is the most pessimistic, but also a reliable way to measure an algorithm’s performance because it guarantees that the algorithm will always run within a certain time.</p>
-</section>
-<section id="average-case" class="level3">
-<h3 class="anchored" data-anchor-id="average-case">Average Case</h3>
-<p>The <strong>expected</strong> runtime over all inputs, assuming a certain input distribution.</p>
-<p>That means we average the running times of the algorithm over all possible inputs, weighted by their probability.</p>
-<section id="probability-distributions" class="level4">
-<h4 class="anchored" data-anchor-id="probability-distributions">Probability Distributions</h4>
+<section id="algorithm-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="algorithm-analysis">Algorithm Analysis</h3>
 <ul>
-<li><p><strong>Uniform distribution:</strong> Models all input where each instance is equally likely. Most common in average-case analysis of general algorithms.</p></li>
-<li><p><strong>Bernoulli distribution:</strong> Useful when inputs are sequences of binary events (success/failure). Most common in probabilistic or randomized algorithms.</p></li>
-<li><p><strong>Geometric distribution:</strong> Models the number of trials until the first success. Most common in probabilistic or randomized algorithms.</p></li>
+<li><a href="../../posts/alg-analysis/index.html">Blog post</a></li>
 </ul>
 </section>
-</section>
-</section>
-<section id="asymptotic-bounds" class="level2">
-<h2 class="anchored" data-anchor-id="asymptotic-bounds">Asymptotic Bounds</h2>
-<p>In algorithm analysis, we often use asymptotic bounds to describe how an algorithm’s running time <strong>grows</strong> as the input grows larger.</p>
-<p>You can visualize this by plotting the runtime for increasing input sizes and comparing it to well-known functions like <span class="math inline">\(n\)</span>, <span class="math inline">\(n \log n\)</span>, or <span class="math inline">\(n^2\)</span>. This is the core idea behind asymptotic comparison of growth rates.</p>
-<section id="upper-bound" class="level3">
-<h3 class="anchored" data-anchor-id="upper-bound">Upper Bound</h3>
-<p>An <strong>upper bound</strong> usually describes the <strong>maximum</strong> amount of work <strong>a specific algorithm</strong> requires to solve a problem.</p>
-<p>An upper bound for a <strong>problem</strong> is established by providing an algorithm that achieves that bound. Thus, an algorithm’s upper bound also provides an upper bound for the problem it solves.</p>
-<p>Upper bounds are often proven using:</p>
+<section id="master-theorem" class="level3">
+<h3 class="anchored" data-anchor-id="master-theorem">Master Theorem</h3>
 <ul>
-<li>Direct algorithm analysis</li>
-<li>Recurrence relations</li>
-<li>Amortized analysis</li>
+<li><a href="./master-theorem.pdf">Lecture slides</a></li>
 </ul>
-</section>
-<section id="lower-bound" class="level3">
-<h3 class="anchored" data-anchor-id="lower-bound">Lower Bound</h3>
-<p>When discussing lower bounds, it’s important to distinguish between a bound on <strong>a specific algorithm</strong> and a bound on <strong>the inherent difficulty of a problem</strong>.</p>
-<section id="for-a-specific-algorithm" class="level4">
-<h4 class="anchored" data-anchor-id="for-a-specific-algorithm">For a Specific Algorithm</h4>
-<p>A <strong>lower bound</strong> for an algorithm indicates the <strong>minimum</strong> amount of work <strong>that specific algorithm</strong> requires to solve a problem in a given case, usually in the worst case.</p>
-<p>Lower bounds for algorithms are often proven using:</p>
-<ul>
-<li>Direct algorithm analysis</li>
-</ul>
-</section>
-<section id="for-a-problem" class="level4">
-<h4 class="anchored" data-anchor-id="for-a-problem">For a Problem</h4>
-<p>A <strong>lower bound</strong> for a problem indicates the <strong>minimum</strong> amount of work <strong>any correct algorithm</strong> requires to solve a problem, always in the worst case.</p>
-<p>This is a much <strong>stronger statement</strong> about the fundamental, inherent difficulty of the problem itself. Lower bound proofs for problems establish the <strong>theoretical best</strong> performance achievable under a defined model of computation.</p>
-<p>For example, searching for an element in an unsorted list requires <span class="math inline">\(n\)</span> comparisions because we must check every element. Otherwise, we might miss the one we didn’t check, and that could’ve been the correct one.</p>
-<p>Lower bounds for problems are often proven using:</p>
-<ul>
-<li>Counting arguments<br>
-</li>
-<li>Decision trees<br>
-</li>
-<li>Adversary arguments<br>
-</li>
-<li>Information theory</li>
-<li>Reductions (P ?= NP)</li>
-</ul>
-</section>
-</section>
-</section>
-<section id="asymptotic-notation" class="level2">
-<h2 class="anchored" data-anchor-id="asymptotic-notation">Asymptotic Notation</h2>
-<p>In theoretical computer science, unless specified otherwise, asymptotic notation usually refers to the <strong>worst case</strong>. In practice, especially with randomized algorithms or heuristics, <strong>expected or average case</strong> complexity may be more relevant.</p>
-<section id="big-o-ofn" class="level3">
-<h3 class="anchored" data-anchor-id="big-o-ofn">Big O: <span class="math inline">\(O(f(n))\)</span></h3>
-<p>An <strong>upper bound</strong> that shows the algorithm <span class="math inline">\(A\)</span>’s running time grows <strong>no faster</strong> than some function <span class="math inline">\(f(n)\)</span> as the input size grows.</p>
-<p>The function <span class="math inline">\(f(n)\)</span>’s graph is asymptotically <em>above or equal</em> to algorithm <span class="math inline">\(A\)</span>’s graph.</p>
-</section>
-<section id="big-omega-omegafn" class="level3">
-<h3 class="anchored" data-anchor-id="big-omega-omegafn">Big Omega: <span class="math inline">\(\Omega(f(n))\)</span></h3>
-<p>A <strong>lower bound</strong> that shows the algorithm <span class="math inline">\(A\)</span>’s running time grows <strong>no slower</strong> than some function <span class="math inline">\(f(n)\)</span> as the input size grows.</p>
-<p>The function <span class="math inline">\(f(n)\)</span>’s graph is asymptotically <em>below or equal</em> to algorithm <span class="math inline">\(A\)</span>’s graph.</p>
-</section>
-<section id="theta-thetafn" class="level3">
-<h3 class="anchored" data-anchor-id="theta-thetafn">Theta: <span class="math inline">\(\Theta(f(n))\)</span></h3>
-<p>This indicates a <strong>tight bound</strong>. In other words, for a specific algorithm, its upper and lower bounds are equivalent up to constant factors. This gives us a very precise understanding of how that algorithm’s runtime grows.</p>
-<p>The function <span class="math inline">\(f(n)\)</span>’s graph is asymptotically <em>equivalent</em> to algorithm <span class="math inline">\(A\)</span>’s graph.</p>
-<p>Solving recurrance relations, such as by using the Master Theorem, gives us a tight bound on that algorithm’s performance.</p>
-<p>An algorithm is considered&nbsp;<strong>asymptotically optimal</strong> for a problem&nbsp;when it has a tight bound that matches the problem’s proven lower bound, meaning we have found the fastest possible algorithm for that problem. If an algorithm’s worst-case upper bound matches the lower bound of the problem it solves, then it is implied that the algorithm has a tight bound.</p>
-</section>
-<section id="little-o-ofn" class="level3">
-<h3 class="anchored" data-anchor-id="little-o-ofn">Little o: <span class="math inline">\(o(f(n))\)</span></h3>
-<p>Similar to Big O, but shows the algorithm <span class="math inline">\(A\)</span>’s running time is <strong>strictly slower than</strong> <span class="math inline">\(f(n)\)</span>.</p>
-<p>The function <span class="math inline">\(f(n)\)</span>’s graph is asymptotically <em>above</em> algorithm <span class="math inline">\(A\)</span>’s graph.</p>
-<p>For example, <span class="math inline">\(n\)</span> grows strictly slower than <span class="math inline">\(n \log n\)</span>.</p>
-</section>
-<section id="little-omega-omegafn" class="level3">
-<h3 class="anchored" data-anchor-id="little-omega-omegafn">Little omega: <span class="math inline">\(\omega(f(n))\)</span></h3>
-<p>Similar to Big Omega, but shows the algorithm <span class="math inline">\(A\)</span>’s running time is <strong>strictly faster than</strong> <span class="math inline">\(f(n)\)</span>.</p>
-<p>The function <span class="math inline">\(f(n)\)</span>’s graph is asymptotically <em>below</em> algorithm <span class="math inline">\(A\)</span>’s graph.</p>
-<p>For example, <span class="math inline">\(n \log n\)</span> grows strictly faster than <span class="math inline">\(n\)</span>.</p>
-<hr>
-<p>Remember, cases describe an algorithm’s performance on specific types of input, while asymptotic bounds and its notation describe its growth rate relative to increasing input size. I hope this helps clear up some common misconceptions!</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
