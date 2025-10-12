@@ -9,7 +9,7 @@ website:
       - href: index.qmd
         text: Home
       - research.qmd
-      - photos.qmd
+      - gallery.qmd
 
 format:
   html:

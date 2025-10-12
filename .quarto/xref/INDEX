@@ -28,5 +28,8 @@
   },
   "teaching/cs161/cs161.qmd": {
     "cs161.html": "e53a99dc"
+  },
+  "gallery.qmd": {
+    "gallery.html": "9700460e"
   }
 }

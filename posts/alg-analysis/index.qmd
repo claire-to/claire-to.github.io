@@ -118,7 +118,7 @@ An algorithm is considered **asymptotically optimal** for a problem when it ha
 
 ### Little o: $o(f(n))$
 
-Similar to Big O, but shows the algorithm $A$'s running time is **strictly slower than** $f(n)$. 
+Similar to Big O, but shows the algorithm $A$'s running time grows **strictly slower than** $f(n)$. 
 
 The function $f(n)$'s graph is asymptotically *above* algorithm $A$'s graph.
 
@@ -126,7 +126,7 @@ For example, $n$ grows strictly slower than $n \log n$.
 
 ### Little omega: $\omega(f(n))$
 
-Similar to Big Omega, but shows the algorithm $A$'s running time is **strictly faster than** $f(n)$. 
+Similar to Big Omega, but shows the algorithm $A$'s running time grows **strictly faster than** $f(n)$. 
 
 The function $f(n)$'s graph is asymptotically *below* algorithm $A$'s graph.
 
