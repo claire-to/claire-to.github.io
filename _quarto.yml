@@ -5,7 +5,7 @@ project:
 website:
   title: "Claire To"
   navbar:
-    left:
+    right:
       - href: index.qmd
         text: Home
       - research.qmd
