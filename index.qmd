@@ -29,7 +29,7 @@ My research is in Theoretical Computer Science, with a focus on algorithms and d
 
 ## Teaching
 
-**CS 161**: [Design and Analysis of Algorithms](./teaching/cs161/cs161.qmd). 
+**CS 161**: [Design and Analysis of Algorithms](./teaching/cs161/cs161.qmd)  
 Term(s): Fall 2025
 
 ## Education
