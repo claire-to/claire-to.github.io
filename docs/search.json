@@ -53,7 +53,7 @@
     "href": "index.html#research",
     "title": "Claire A. To",
     "section": "Research",
-    "text": "Research\nMy research is in Theoretical Computer Science, with a focus on algorithms and data structures for computational geometry. I became interested in research through my work in computer science education, and that experience inspired my pursuit of a PhD. Though my path here was unexpected, I am grateful for the journey that led me to this field."
+    "text": "Research\nMy research is in theoretical computer science, with a primary interest in computational geometry, though I also explore a range of problems in algorithms and data structures. My curiosity for research grew from my early work in computer science education and was further inspired as I explored experimental algorithms and computational geometry. The path that brought me here has been unconventional, guided by the people and opportunities along the way, and I’m grateful for the journey and how it has shaped my perspective on the field."
   },
   {
     "objectID": "index.html#teaching",
@@ -144,7 +144,7 @@
     "href": "teaching/cs161/cs161.html",
     "title": "CS 161 Resources",
     "section": "",
-    "text": "Algorithm Analysis\n\nGeneral blog post\nMasters theorem lecture"
+    "text": "Algorithm Analysis\n\nMasters theorem lecture"
   },
   {
     "objectID": "teaching/cs161/cs161.html#master-theorem",
@@ -158,7 +158,7 @@
     "href": "gallery.html",
     "title": "Gallery",
     "section": "",
-    "text": "SIGCSE 2025\n\n\n\n\n\n\n\nCCCG 2025\n\n\n\n\n\n\n\n\n\nWADS/CCCG 2025"
+    "text": "SIGCSE 2025\n\n\n\n\n\n\n\nCCCG 2025\n\n\n\n\n\n\n\n\n\nWADS/CCCG 2025\n\n\n\n\n\n\n\nShion’s PhD Defense"
   },
   {
     "objectID": "posts/graduate-essay/index.html",

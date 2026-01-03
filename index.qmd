@@ -25,7 +25,7 @@ Contact: claire [dot] to [at] uci [dot] edu
 
 ## Research
 
-My research is in Theoretical Computer Science, with a focus on algorithms and data structures for computational geometry. I became interested in research through my work in computer science education, and that experience inspired my pursuit of a PhD. Though my path here was unexpected, I am grateful for the journey that led me to this field.
+My research is in theoretical computer science, with a primary interest in computational geometry, though I also explore a range of problems in algorithms and data structures. My curiosity for research grew from my early work in computer science education and was further inspired as I explored experimental algorithms and computational geometry. The path that brought me here has been unconventional, guided by the people and opportunities along the way, and I’m grateful for the journey and how it has shaped my perspective on the field.
 
 ## Teaching
 
