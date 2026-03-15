@@ -29,7 +29,7 @@ My research is in theoretical computer science, with a primary interest in compu
 
 ## Teaching
 
-**CS 161**: Design and Analysis of Algorithms
+**CS 161**: Design and Analysis of Algorithms  
 Term(s): Fall 2025
 
 **CS 165**: Project in Algorithms and Data Structures  
