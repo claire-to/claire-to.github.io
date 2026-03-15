@@ -25,12 +25,15 @@ Contact: claire [dot] to [at] uci [dot] edu
 
 ## Research
 
-My research is in theoretical computer science, with a primary interest in computational geometry, though I also explore a range of problems in algorithms and data structures. My curiosity for research grew from my early work in computer science education and was further inspired as I explored experimental algorithms and computational geometry. The path that brought me here has been unconventional, guided by the people and opportunities along the way, and I’m grateful for the journey and how it has shaped my perspective on the field.
+My research is in theoretical computer science, with a primary interest in computational geometry, though I explore a range of problems in algorithms. My curiosity for research grew from my early work in computer science education and was further inspired as I explored experimental algorithms and computational geometry. The path that brought me here has been unconventional and guided by the people and opportunities along the way, but I’m grateful for the journey and how it has shaped my perspective both on the field and in life.
 
 ## Teaching
 
-**CS 161**: [Design and Analysis of Algorithms](./teaching/cs161/cs161.qmd)  
+**CS 161**: Design and Analysis of Algorithms
 Term(s): Fall 2025
+
+**CS 165**: Project in Algorithms and Data Structures  
+Term(s): Spring 2026
 
 ## Education
 
@@ -38,7 +41,7 @@ Term(s): Fall 2025
 *Ph.D in Computer Science* | Sept 2025 - Present
 
 **Orange Coast College**  
-*A.A in Dance* | Aug 2024 - Present
+*A.A in Dance* | Aug 2025 - Present
 
 **University of California, Irvine**  
 *B.S in Computer Science* | Sept 2023 - Jun 2025

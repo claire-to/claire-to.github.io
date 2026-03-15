@@ -53,21 +53,21 @@
     "href": "index.html#research",
     "title": "Claire A. To",
     "section": "Research",
-    "text": "Research\nMy research is in theoretical computer science, with a primary interest in computational geometry, though I also explore a range of problems in algorithms and data structures. My curiosity for research grew from my early work in computer science education and was further inspired as I explored experimental algorithms and computational geometry. The path that brought me here has been unconventional, guided by the people and opportunities along the way, and I’m grateful for the journey and how it has shaped my perspective on the field."
+    "text": "Research\nMy research is in theoretical computer science, with a primary interest in computational geometry, though I explore a range of problems in algorithms. My curiosity for research grew from my early work in computer science education and was further inspired as I explored experimental algorithms and computational geometry. The path that brought me here has been unconventional and guided by the people and opportunities along the way, but I’m grateful for the journey and how it has shaped my perspective both on the field and in life."
   },
   {
     "objectID": "index.html#teaching",
     "href": "index.html#teaching",
     "title": "Claire A. To",
     "section": "Teaching",
-    "text": "Teaching\nCS 161: Design and Analysis of Algorithms\nTerm(s): Fall 2025"
+    "text": "Teaching\nCS 161: Design and Analysis of Algorithms Term(s): Fall 2025\nCS 165: Project in Algorithms and Data Structures\nTerm(s): Spring 2026"
   },
   {
     "objectID": "index.html#education",
     "href": "index.html#education",
     "title": "Claire A. To",
     "section": "Education",
-    "text": "Education\nUniversity of California, Irvine\nPh.D in Computer Science | Sept 2025 - Present\nOrange Coast College\nA.A in Dance | Aug 2024 - Present\nUniversity of California, Irvine\nB.S in Computer Science | Sept 2023 - Jun 2025\nOrange Coast College\nA.A in Liberal Arts | Aug 2021 - May 2023\nOrange Coast College\nA.S in Computer Science | Aug 2020 - May 2023\nHuntington Beach High School\nHigh School Diploma | Aug 2017 - May 2021"
+    "text": "Education\nUniversity of California, Irvine\nPh.D in Computer Science | Sept 2025 - Present\nOrange Coast College\nA.A in Dance | Aug 2025 - Present\nUniversity of California, Irvine\nB.S in Computer Science | Sept 2023 - Jun 2025\nOrange Coast College\nA.A in Liberal Arts | Aug 2021 - May 2023\nOrange Coast College\nA.S in Computer Science | Aug 2020 - May 2023\nHuntington Beach High School\nHigh School Diploma | Aug 2017 - May 2021"
   },
   {
     "objectID": "research.html",
@@ -144,7 +144,7 @@
     "href": "teaching/cs161/cs161.html",
     "title": "CS 161 Resources",
     "section": "",
-    "text": "Algorithm Analysis\n\nMasters theorem lecture"
+    "text": "Algorithm Analysis\n\nMaster theorem lecture"
   },
   {
     "objectID": "teaching/cs161/cs161.html#master-theorem",
