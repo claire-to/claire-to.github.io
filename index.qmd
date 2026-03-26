@@ -19,13 +19,13 @@ about:
 
 ## About
 
-Hello! I’m a PhD student in Computer Science at the University of California, Irvine in the [Center for Algorithms and Theory of Computation](https://ics.uci.edu/~theory/). I'm honored to be advised by [Dr. Michael Goodrich](https://ics.uci.edu/~goodrich/).
+Hello! I’m a PhD student in Computer Science at the University of California, Irvine in the [Center for Algorithms and Theory of Computation](https://ics.uci.edu/~theory/). I'm honored to be advised by [Dr. Michael Goodrich](https://ics.uci.edu/~goodrich/). You can reach me at claire [dot] to [at] uci [dot] edu.
 
-Contact: claire [dot] to [at] uci [dot] edu
+My research is in [theoretical computer science](https://en.wikipedia.org/wiki/Theoretical_computer_science), with a primary interest in [computational geometry](https://en.wikipedia.org/wiki/Computational_geometry), though I explore a range of problems in [algorithms](https://en.wikipedia.org/wiki/Algorithm). My curiosity for research grew from my early work in [computing education](https://en.wikipedia.org/wiki/Computing_education). My path has been unconventional and guided by the people and opportunities along the way but I’m grateful for the journey and how it has shaped my perspective both on the field and in life.
 
-## Research
+In my free time, I pursue knowledge and growth through the creative arts, exploring movement, mindfulness, and artistic expression. 
 
-My research is in [theoretical computer science](https://en.wikipedia.org/wiki/Theoretical_computer_science), with a primary interest in [computational geometry](https://en.wikipedia.org/wiki/Computational_geometry), though I explore a range of problems in [algorithms](https://en.wikipedia.org/wiki/Algorithm). My curiosity for research grew from my early work in [computing education](https://en.wikipedia.org/wiki/Computing_education). My path has been unconventional, guided by the people and opportunities along the way, but I’m grateful for the journey and how it has shaped my perspective both on the field and in life.
+My [Erdős number](https://en.wikipedia.org/wiki/Erdős_number) is 3!
 
 ## Teaching
 
